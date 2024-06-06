@@ -1,0 +1,893 @@
+
+
+/* Animation for all the divs */
+
+
+
+
+.index-body{
+    
+    overflow-x: hidden !important;
+    background-color: rgb(0, 0, 0);
+
+
+
+}
+
+/*  */
+
+/* design For Navigation Menu  starts*/
+
+
+
+.b-btn{
+width: 50% !important;
+}
+
+
+
+
+
+
+
+.hhh{
+color: yellow;
+}
+.offcanvas-end{
+border-radius: 2rem;
+}
+
+.ul{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* for the unordered list */
+.ul-li{
+margin-left: 6rem;
+color: white !important;
+font-size: 1rem;
+font-weight: bold;
+
+
+}
+.ul-li:hover{
+  background-color: blueviolet;
+  font-size: 2rem;
+  border-radius:1rem;
+  transition-duration: 0.5s;
+  
+  }
+
+
+/* for the link inside the unoredered list */
+.ul-a{
+color: white !important;
+}
+
+.nav-button{
+background-color: blueviolet !important;
+color: rgb(255, 255, 255) !important;
+
+
+}
+
+
+.nav-bar{
+background-color: #8400ff;
+}
+/* Design For Navigation Menu Ends */
+
+
+/* second nav bar */
+
+.ibutton{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.ibutton:hover{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.ibuttonn{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: 2px solid white;
+}
+.ibuttonn:hover{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+  background-color: blueviolet;
+  color: #fff;
+  border: 2px solid white;
+}
+
+
+/* the button beside the home header unleashing..... */
+.nav-button3{
+background-color:  rgb(0, 255, 157) !important;
+
+color: rgb(0, 0, 0) !important;
+padding-left: 6rem !important;
+padding-right: 6rem !important;
+border-radius: 15px !important;
+
+}
+
+.btn a{
+text-decoration: none;
+}
+
+
+/* secodn nav bar ends */
+.home-hr{
+color: #8400ff;
+font-size: 10px;
+font-weight: bolder;
+
+}
+
+
+/* ALLL MEDIA SCREEM USE CASE */
+@media screen and ( max-width:800px ) {
+.ul-li{
+   
+    margin-bottom: 50px;
+  }
+
+  
+.nav-button{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.clo{
+    width: 300px;
+    margin-top: 2rem !important;
+}
+.Second-Content h4{
+   text-align: left;
+}
+
+
+.col-ssm{
+    display: none;
+}
+.home1{
+    display: none;
+}
+
+.faqs{
+    margin: 1rem;
+}
+}
+/* general use cases */
+.texty{
+color: #00ff80;
+}
+
+
+@media screen  and (min-width:800px) {
+
+
+.Mobile-view{
+    display: none;
+}
+
+
+.Fifth-content-mobile{
+display: none;
+}
+
+.Sixth-Content h2{
+    margin-top: 8rem;
+}
+
+
+
+
+  .faqs{
+    margin: 2rem;
+  }
+
+  .xart{
+    display: none;
+  }
+
+}
+
+
+/* the First content after the Nav bar */
+.First-Content{
+
+padding-top: 40px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+
+
+}
+.lol{
+color: #ffffff;
+}
+
+.loll{
+color: #ffffff;
+}
+
+.llol{
+color: #f6f8f8;
+}
+
+.lal{
+color: #ffffff;
+}
+.lel{
+color: #00ff80;
+}
+
+
+
+
+.First-Content div{
+font-size: 4rem;
+
+}
+.First-Contentt div{
+  font-size: 3rem;
+  
+  }
+
+.First-Content p{
+padding-left: 30px;
+}
+
+.dio:hover{
+
+  background-color: blueviolet;
+  padding: 1rem;
+  transition-duration: 0.3s;
+  border-radius: 1rem;
+  
+}
+/* First Content Ends */
+/* Second Content */
+.cepta{
+
+  
+  color: #00ff80;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+ 
+}
+.cop{
+  padding-top: 1rem;
+}
+.cep{
+  font-size: 2rem;
+  
+}
+
+
+
+/* Nft price */
+.bord{
+background-color: rgb(0, 0, 0) !important;
+border-radius: 2rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
+font-weight: bold !important;
+color: white;
+
+/* border: 4px solid rgb(0, 255, 157); */
+}
+/* general use case */
+.cc{
+/* background-image: linear-gradient(to top, rgb(138, 43, 226),rgb(0, 255, 157)); */
+border: 4px solid rgb(0, 255, 157);
+}
+
+.ins{
+  background-color: #100e1a;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ilist{
+margin-bottom: 1rem;
+background-color: #100e1a;
+padding: 0.5rem;
+border-radius: 1rem;
+}
+
+
+.list-p{
+color: rgb(0, 255, 98);
+}
+
+.ruloo{
+   background-color: #100e1a;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   border-radius: 1.5rem;
+}
+
+.rulo{
+  background-color: #100e1a;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 255, 98);
+}
+.rulo:hover{
+  background-color: blueviolet;
+}
+
+.ftimg{
+border-radius: 2rem;
+border: 1px solid rgb(0, 0, 0);
+}
+.list{
+margin-top: 0.5rem;
+}
+.nftt{
+  margin-top: 0.5rem;
+}
+
+/* Second Content Starts */
+.Second-Content{
+margin: 1rem !important;
+}
+.Second-Content h4{
+font-size: 30px;
+
+}
+.image-container{
+background-image: url('/image/download\ \(22\).jpg');
+background-position: center;
+backdrop-filter: blur(5px);
+padding-top: 4rem;
+padding-bottom: 2rem;
+border-radius: 2rem;
+}
+
+
+.h2-s{
+color: rgb(255, 255, 255);
+
+}
+.m23{
+box-shadow: 5px 1px 11px 5px  blueviolet !important;
+}
+
+/* Second Content Ends */
+
+/* Third Content Starts */
+.Third-Section{
+margin: 1rem !important;
+column-gap: 5px;
+}
+
+.Third-Section div{
+background-color: blueviolet !important;
+padding: 15px;
+border-radius: 25px;
+margin-bottom: 10px;
+color: white !important;
+}
+
+.Third-Section div2{
+background-color: blueviolet  !important;
+padding: 15px;
+border-radius: 25px;
+color: white !important;
+}
+/* Third Content ends */
+
+
+
+/* fourth Content Starts */
+
+
+
+.ff{
+background-color: rgb(0, 0, 0) !important;
+padding-top: 3rem !important;
+padding-bottom: 3rem !important;
+}
+
+
+
+
+
+.xd{
+
+
+
+margin: 1rem;
+
+ border-radius: 2rem;
+ padding-left: 5px;
+ padding-right: 5px;
+transform: rotate(5deg);
+
+}
+
+.xdd{
+
+
+
+  margin: 1rem;
+  
+   border-radius: 2rem;
+   padding-left: 5px;
+   padding-right: 5px;
+  transform: rotate(-5deg);
+  
+  }
+
+
+.tex{
+color: rgb(0, 255, 157);
+
+}
+
+
+
+.xd:hover{
+border: 5px solid;
+border-color: blueviolet;
+margin-top: -1rem;
+transition-duration: 2s;
+
+
+}
+/* Fourth Content Ends */
+
+
+/* Fifth Content Starts */
+.FC-Desktop{
+margin: 1rem !important;
+}
+.f2 p{
+font-weight: bold !important;
+font-size: 20px;
+}
+.FC-Desktop h2{
+/* background-color: blueviolet; */
+border-radius: 10px;
+padding: 5px;
+}
+
+.FC-Desktop img{
+border-radius: 25px;
+
+}
+
+.FC-mobile{
+margin:  1rem !important;
+}
+
+.FC-mobile h2{
+background-color: blueviolet;
+border-radius: 10px;
+padding: 5px;
+}
+
+.FC-mobile img{
+border-radius: 25px;
+
+
+}
+
+
+/* Fifth-Content Ends */
+
+
+
+/* Sixth Content Starts */
+
+
+
+.Sixth-Content p{
+font-size: 40px;
+padding: 20px;
+border-radius: 10px;
+color: blueviolet;
+
+
+
+}
+
+.pto{
+  margin-top: 2rem;
+  transform: rotate(20deg);
+}
+
+
+/* Sixth Content Ends */
+.text-primarys{
+color: rgb(255, 255, 255) ;
+}
+
+/* Seventh Content Starst */
+
+.nav-button2{
+background-color: rgb(132, 0, 255) !important;
+color: white !important;
+padding-left: 6rem !important;
+padding-right: 6rem !important;
+border-radius: 15px !important;
+}
+.nav-button2:hover{
+ background-color: rgb(0, 255, 136) !important;
+ color: white;
+ padding-left: 7rem !important;
+ padding-right: 7rem !important;
+ transition-duration: 0.3s;
+ padding-top: 0.5rem;
+ padding-bottom: 0.5rem;
+}
+
+/* Seventh Content Ends */
+
+/* Footer Starts */
+
+
+
+
+.colop{
+  color: #ffffff;
+  background-color: blueviolet;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem !important;
+}
+
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+footer {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduce column width on smaller screens */
+  grid-gap: 10px; /* Reduce gap between columns on smaller screens */
+}
+}
+
+
+
+
+/* SIGN-UP CSS DESIGN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.s-body{
+background-color: rgb(0, 0, 0) !important;
+
+}
+.form-img{
+text-align: left !important;
+justify-self: left !important;
+}
+.content{
+margin-top: 40px;
+}
+.mb-3{
+text-align: left !important;
+}
+
+.mb-5{
+  text-align: center;
+}
+
+.very{
+  margin-top: 9rem;
+}
+
+
+
+.buto{
+
+background-color: rgb(0, 255, 149);
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+color: black;
+border-radius: 15px;
+width: 50%;
+}
+
+.Signpage{
+border-radius: 15px;
+padding-top: -10px !important;
+padding-bottom: -10px;
+}
+
+/* space */
+.buto:hover{
+background-color:  rgb(153, 0, 255) ;
+border-color:  rgb(0, 255, 149) ;
+}
+@media screen and (min-width:600px) {
+
+.buto{
+ width: 40%;
+}
+}
+
+
+.fasa{
+margin-top: -60px;
+}
+#rda{
+ margin-top: 70px;
+}
+#maka{
+  
+  background-image: url('/image/blap.jpg');
+  background-size: cover;
+  padding-bottom: 50px;
+  margin-top: -30px;
+
+}
+/* space */
+
+
+#form{
+  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+#input{
+  background-color: rgb(48, 47, 47) !important;
+  border: none !important;
+  
+
+}
+/* homepage design xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+.textinfo{
+color: blueviolet ;
+
+}
+
+
+.nd{
+background-color: #000000 !important;
+
+
+
+}
+
+.SOK:hover{
+  background-color: blueviolet;
+  padding: 1rem !important;
+  
+  border-radius: 1rem;
+  transition-duration: 0.3s !important;
+}
+
+.SOKK{
+  border: 2px solid blueviolet;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  /* background-color: blueviolet; */
+}
+
+.home{
+background-color: rgb(0, 0, 0) !important;
+margin-bottom: 1rem;
+
+overflow-x: hidden;
+
+}
+section{
+margin: 20px;
+}
+
+.navv-img{
+background-color: rgb(9, 0, 17);
+}
+
+.nav-border{
+border: 3px solid rgb(0, 0, 0) !important;
+}
+
+/* content of the page design starts */
+
+.wi{
+margin-top: 1.rem;
+
+}
+
+.sliderb{
+width: 25%;
+height: 5px;
+background: rgb(0, 255, 191);
+border-radius: 5px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.two{
+border-radius: 3rem;
+}
+
+.koi{
+  background-color: #100e1a;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+
+.vmg{
+border-radius: 3rem;
+}
+
+.vmgg{
+  border-radius: 1rem;
+  transform:rotate(10deg);
+  box-shadow: 7px 7px rgb(255, 255, 255);
+  border: 3px solid black;
+  
+}
+
+.vmp{
+  border-radius: 1rem;
+  transform:rotate(-10deg);
+  box-shadow: 7px 7px rgb(255, 255, 255);
+  border: 3px solid black;
+  
+}
+
+.naa{
+margin-top: -2rem;
+}
+
+
+
+.gst{
+margin-top: -3rem;
+
+
+
+color: #fff;
+border: none;
+position: fixed;
+right: 0px !important;
+
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+margin: 1rem;
+}
+
+
+.S-h{
+color: rgb(0, 252, 147);
+}
+
+.chart{
+color: black !important;
+}
+
+
+
+
+
+/* Home 3 starts ---------------------------------------------------------- */
+
+.collapseExample{
+
+
+/* border: 8px solid  rgb(0, 255, 157); */
+font-size: 15px;
+color: rgb(255, 255, 255) !important;
+border-radius: 2rem;
+margin: 0.2rem;
+/* border: 3px solid white; */
+background-color: #202020;
+
+}
+
+
+.ilov{
+border-radius: 3rem;
+border: 2px solid blueviolet;
+margin-bottom: 1rem;
+
+}
+
+
+
+
+
+/* home 3 ends here */
+
+
+/* home 4 starts here -------------------*/
+.btn-primaryy{
+background-color: rgb(0, 252, 147);
+padding-left: 2rem;
+padding-right: 2rem;
+}
+.ghost-img{
+transform: rotate(-10deg);
+}
+/* home 4 ends */
+
+
+
+
+
+
+
+
+/* Game Designs Starts Here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#counter {
+font-size: 3rem;
+
+color: rgb(255, 255, 255);
+
+}
+
+
+#counterr{
+  font-size: 4rem;
+  
+  color: rgb(0, 255, 98);
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

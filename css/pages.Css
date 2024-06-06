@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bottom-bar {
+    position: fixed !important;
+    bottom: 0;
+    
+    width: 100%;
+    
+    
+    text-align: center !important;
+    padding: 1px;
+}
+.buttonx{
+   
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: #141414;
+     border: 1px solid rgb(0, 0, 0);
+
+  
+}
+
+
+.custom-card {
+    background-color: #0f0f0fc4;
+    
+    padding: 1rem;
+    border-radius: 2rem;
+    color: white;
+   
+}
+.custom-card img {
+    border-radius: 3rem;
+}
+.custom-inner-card {
+    background-color: #6200ff;
+  
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.ca:hover{ 
+    color: black;
+}
+.gc{
+  
+    color: #00ff73;
+}
+
+.offcanvas{
+    background-color: #000000 !important;
+    border-radius: 1rem;
+    border-left: 1px solid white;
+    
+   }
+.offp{
+    color: #ffffff;
+    font-size: 1.5rem;
+    
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.bottom-nav{
+    position: fixed !important;
+}
+
+.bgn{
+    background: none;
+}
+
