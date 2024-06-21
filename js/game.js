@@ -3,7 +3,7 @@
  initializeGame('mobile');
 
  function initializeGame(view) {
-     const numBoxes = 10;
+     const numBoxes = 100;
      const gameBoard = document.getElementById(view + '-game-board');
      gameBoard.innerHTML = ''; // Clear previous boxes
 
