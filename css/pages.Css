@@ -17,34 +17,48 @@ html{
     
     text-align: center !important;
     padding: 1px;
+
+
 }
+
+
+
+
 .buttonx{
    
-    border-radius: 1rem;
+    border-radius: 0.9rem;
     padding: 0.5rem;
-    background-color: #141414;
-     border: 1px solid rgb(0, 0, 0);
-
+    background-color: rgb(0, 0, 0) ;
+    border: 2px solid #2c2c2c ;
+     
   
 }
 
+.buttonx img {
+     width: 30px !important;
+}
+
+
 
 .custom-card {
-    background-color: #0f0f0fc4;
-    
+   background-color: #0c0c0c;
+    /* background: linear-gradient(to right, rgb(18, 2, 27), rgb(45, 1, 51)); */
     padding: 1rem;
     border-radius: 2rem;
     color: white;
-   
+    border: 1px solid rgb(39, 39, 39);
+    
+    
 }
 .custom-card img {
     border-radius: 3rem;
 }
 .custom-inner-card {
-    background-color: #6200ff;
-  
+    background-color: #1a1a1a;
+    
     border-radius: 1rem;
     padding: 0.5rem;
+    
 }
 
 .ca:hover{ 

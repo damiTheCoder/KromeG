@@ -241,6 +241,14 @@
 }
 
 }
+.icon-text-container{
+  display: flex;
+  align-items: baseline;
+}
+
+.icon {
+   margin-right: 10px ;
+}
 
 
 .button {
@@ -367,7 +375,7 @@
        <div   class="modal fade  "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
          <div class="modal-dialog  " >
              
-           <div style="background-color: #06030a; border: 1px solid rgb(24, 11, 39); border-radius: 2rem;  " class="modal-content mf">
+           <div style="background-color: #0a0a0a; border: 3px solid rgb(24, 24, 24); border-radius: 2rem;  " class="modal-content mf">
       
              <div class="modal-header " >
       
@@ -388,36 +396,17 @@
             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
               <li class="nav-item ">
                 <a class="nav-link active text-black" aria-current="page" href="#"><p class="offp">
-                  <img style="background-color: #9c5cd8; border-radius: 1rem;" src="./images/lono.png" width="40">
-                  <b style="color: #a200ff;">Hosted Games</b></p></a>
+                  <img style="background-color: #6200ff; border-radius: 1rem; " src="./images/lono.png" width="40">
+                  <b style="color: #ffffff;">Hosted Games</b></p></a>
               </li>
               
               <li class="nav-item">
                 <a class="nav-link text-black" href="#"><p class="offp">
                   <img style="border-radius: 1rem;" src="./images/dog (3).jpg" width="40" >
-                  <b style="color: #8400ff; ">Customer support
+                  <b style="color: #ffffff; ">Customer support
                   </b></p></a>
               </li>
     
-              <li class="nav-item text-black" >
-                <a class="nav-link text-black" href="#"><p class="offp">
-                  <img style="border-radius: 1rem;" src="./images/dog (2).jpg" width="40" >
-                  <b style="color: #8c00ff;">Scan to load</b></p></a>
-              </li>
-    
-    
-              
-              <li class="nav-item text-black">
-                <a class="nav-link text-black" href="./farm.html"><p class="offp">
-                  <img style="border-radius: 1rem;" src="./images/Pepinilo.jpg" width="40">
-                  <b style="color: #00ff88;">FarmPoints (Free Tag)</b></p></a>
-              </li>
-  
-              <li class="nav-item text-black">
-                  <a class="nav-link text-black" href="./CreateFarm.html"><p class="offp">
-                    <img style="border-radius: 1rem;" src="./images/Pepinilo.jpg" width="40">
-                    <b style="color: #e5ff00;">CreateYour GameCampaign</b></p></a>
-                </li>
               <p class="text-white"><b>Follow our socials</b></p>
             
                 
@@ -477,11 +466,10 @@
      
  </div>
 <!-- The body of the Chat -->
- <div style="border-radius: 0rem;" class="chat-offcanvas">
-     <h4 class="chat-offcanvas-title"> <img style="border-radius: 1rem;" src="./images/K (2).png" width="30">
-        </h4>
+ <div style="border-radius: 0rem; border-right: 1px solid rgb(31, 31, 31);" class="chat-offcanvas">
+    
   <div>
-    <h3 style="background-color: #6f00ff; border: 3px solid rgb(78, 55, 105); padding: 0.3rem; border-radius: 3rem;">
+    <h3 style="background-color: #161616; border: 1px solid rgb(0, 0, 0); padding: 0.5rem; border-radius: 1rem;">
       Notifications</h3>
  
   </div>
@@ -489,7 +477,40 @@
      <!-- Chat messages will be added here -->
      
      <button style="border-radius: 2rem;" class="chat-offcanvas-cancel bg-black"><img src="./images/x.png"></button>
+    <!-- The Notification Messages -->
+     <div style="color: #ffffff; ">
+         <div style="background-color: #0f0f0f; padding: 0.5rem; border-radius: 2rem;" class="icon-text-container">
+          <i style="margin-top: 0.2rem;" class="icon-class"><img style="background-color: #8400ff;" class="vmg wg " src="./images/lopa (2).webp" width="30px"> </i>
+    
+          &nbsp; <span> New hunt Just Dropped Asset Worth $4500</span>
+         </div>  
+     <br>
 
+       <div style="background-color: #0f0f0f; padding: 0.5rem; border-radius: 2rem;" class="icon-text-container">
+        <i style="margin-top: 0.2rem;" class="icon-class"><img style="background-color: #e5ff00;" class="vmg wg " src="./images/lopa (3).webp" width="30px"> </i>
+  
+        &nbsp; <span> New hunt Just Dropped Asset Worth $4500</span>
+       </div>  
+       <br>
+
+       <div style="background-color: #0f0f0f; padding: 0.5rem; border-radius: 2rem;" class="icon-text-container">
+        <i style="margin-top: 0.2rem;" class="icon-class"><img style="background-color: #8400ff;" class="vmg wg " src="./images/lopa (2).webp" width="30px"> </i>
+  
+        &nbsp; <span> New hunt Just Dropped Asset Worth $4500</span>
+       </div>  
+   <br>
+
+     <div style="background-color: #0f0f0f; padding: 0.5rem; border-radius: 2rem;" class="icon-text-container">
+      <i style="margin-top: 0.2rem;" class="icon-class"><img style="background-color: #e5ff00;" class="vmg wg " src="./images/lopa (3).webp" width="30px"> </i>
+
+      &nbsp; <span> New hunt Just Dropped Asset Worth $4500</span>
+     </div>  
+     <br>
+    
+
+
+
+    </div>
  </div>
 
   <!-- chat system ends -->
@@ -505,12 +526,12 @@
 <div class="container MOB ">
   
 <!-- the body of the page -->
-
+   
 <!-- The profile Header -->
 <section style="margin-top: 0.1rem; margin-bottom: 1rem; "  class="text-left  ">
   <div class="text-center">
-    <button style="background-color: #110520; border: 2px solid rgb(99, 63, 141); padding: 0.3rem; border-radius: 2rem; ">
-      <div class=" text-white  o8 ">
+    <button style="background-color: #1f1f1f; border: 2px solid rgb(70, 70, 70); padding: 0.3rem; border-radius: 2rem; ">
+      <div style="font-size: 1.5rem;" class=" text-white  o8 ">
         <img class="p-img" src="./images/00 (1).png" width="40"  >
         @kiel  👏
         </div>
@@ -580,24 +601,50 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
 
 <!-- ///////////// -->
 <!-- -------------------------------------------------------------------------- -->
-<div class="text-left  container-fluid">
-  <button  style="background-color: #0a0a0a; border: 1px solid rgb(0, 0, 0);  padding: 0.7rem; border-radius: 1rem;">
-    <div style="font-size: 1.3rem;" class="text-white ">
-      Current Games
-    </div>
-   </button>
- </div>
+<div class="row">
+  <div class="col">
+    <div class="text-left  ">
+      <button  style="background-color: #242424; border: 1px solid rgb(0, 0, 0);  padding: 0.7rem; border-radius: 1rem;">
+        <div style="font-size: 1rem;" class="text-white ">
+          Current Games
+        </div>
+       </button>
+     </div>
+  </div>
+
+  <div class="col">
+    <div class="text-end  ">
+      <a href="./SearchGames.html">
+        <button  style="background-color: #0a0a0a; border: 1px solid rgb(132, 0, 255);  padding: 0.7rem; border-radius: 1rem;">
+        <div style="font-size: 1.3rem;" class="text-white ">
+         <img src="./images/search (1).png" width="30">
+        </div>
+       </button></a>
+     </div>
+  </div>
+</div>
 
    <!-- The current games -->
 <br>
 
+<div>
+  <h style="color: #00ff88;">
+         
+    Search for more Treasure Hunt by other Host
+    
+     </h>
+</div>
+<br>
 <!-- ----------------------------------------------------------------------------------- -->
+
+
 <section>
   
 <div class=" mt-1 ">
   <div class="row" style="column-gap: 0rem;">
       <div class="col col-md-6 mb-3">
-          <div class="custom-card">
+          <a style="text-decoration: none;" href="./Description.html">
+            <div class="custom-card">
               <div class="row">
                   <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
                   <div class="col-9 text-center">
@@ -605,12 +652,14 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
                   </div>
               </div>
               <div class="text-center mt-2">ASSET | PRIZE</div>
-              <hr>
+             
               <div class="text-center">$8.5K</div>
           </div>
+          </a>
       </div>
       <div class="col col-md-6 mb-3">
-          <div class="custom-card">
+          <a style="text-decoration: none;" href="./Description.html">
+            <div class="custom-card">
               <div class="row">
                   <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
                   <div class="col-9 text-center">
@@ -618,9 +667,10 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
                   </div>
               </div>
               <div class="text-center mt-2">ASSET | PRIZE</div>
-              <hr>
+             
               <div class="text-center">$100k</div>
           </div>
+          </a>
       </div>
   </div>
 </div>
@@ -642,30 +692,34 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
   <div>
     <div class="row" style="column-gap: 0rem;">
         <div class="col col-md-6 mb-3">
+           <a style="text-decoration: none;" href="./Description.html">
             <div class="custom-card">
-                <div class="row">
-                    <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
-                    <div class="col-9 text-center">
-                        <div class="custom-inner-card">Nodoe</div>
-                    </div>
-                </div>
-                <div class="text-center mt-2">ASSET | PRIZE</div>
-                <hr>
-                <div class="text-center">$8.5K</div>
-            </div>
+              <div class="row">
+                  <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
+                  <div class="col-9 text-center">
+                      <div class="custom-inner-card">Nodoe</div>
+                  </div>
+              </div>
+              <div class="text-center mt-2">ASSET | PRIZE</div>
+            
+              <div class="text-center">$8.5K</div>
+          </div>
+           </a>
         </div>
         <div class="col col-md-6 mb-3">
+           <a style="text-decoration: none;" href="./Description.html">
             <div class="custom-card">
-                <div class="row">
-                    <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
-                    <div class="col-9 text-center">
-                        <div class="custom-inner-card">DreXZ</div>
-                    </div>
-                </div>
-                <div class="text-center mt-2">ASSET | PRIZE</div>
-                <hr>
-                <div class="text-center">$100k</div>
-            </div>
+              <div class="row">
+                  <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
+                  <div class="col-9 text-center">
+                      <div class="custom-inner-card">DreXZ</div>
+                  </div>
+              </div>
+              <div class="text-center mt-2">ASSET | PRIZE</div>
+            
+              <div class="text-center">$100k</div>
+          </div>
+           </a>
         </div>
     </div>
   </div>
@@ -688,30 +742,34 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
   <div class=" mt-1 ">
     <div class="row" style="column-gap: 0rem;">
         <div class="col col-md-6 mb-3">
-            <div class="custom-card">
-                <div class="row">
-                    <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
-                    <div class="col-9 text-center">
-                        <div class="custom-inner-card">Nodoe</div>
-                    </div>
-                </div>
-                <div class="text-center mt-2">ASSET | PRIZE</div>
-                <hr>
-                <div class="text-center">$8.5K</div>
-            </div>
+           <a style="text-decoration: none;" href="./Description.html">
+            <div  class="custom-card">
+              <div class="row">
+                  <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
+                  <div class="col-9 text-center">
+                      <div class="custom-inner-card">Nodoe</div>
+                  </div>
+              </div>
+              <div class="text-center mt-2">ASSET | PRIZE</div>
+             
+              <div class="text-center">$8.5K</div>
+          </div>
+           </a>
         </div>
         <div class="col col-md-6 mb-3">
+           <a style="text-decoration: none;"  href="./Description.html">
             <div class="custom-card">
-                <div class="row">
-                    <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
-                    <div class="col-9 text-center">
-                        <div class="custom-inner-card">DreXZ</div>
-                    </div>
-                </div>
-                <div class="text-center mt-2">ASSET | PRIZE</div>
-                <hr>
-                <div class="text-center">$100k</div>
-            </div>
+              <div class="row">
+                  <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
+                  <div class="col-9 text-center">
+                      <div class="custom-inner-card">DreXZ</div>
+                  </div>
+              </div>
+              <div class="text-center mt-2">ASSET | PRIZE</div>
+             
+              <div class="text-center">$100k</div>
+          </div>
+           </a>
         </div>
     </div>
   </div>
@@ -725,7 +783,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
 
 
 
-<div style="max-width: fit-content; background-color: #131313; border: 1px solid rgb(31, 11, 39);  padding: 0.7rem; border-radius: 1rem;">
+<div style="max-width: fit-content; background-color: #131313;  padding: 0.7rem; border-radius: 1rem;">
   <div style="font-size: 1.3rem;" class="text-white">
     +567 more
   </div>
@@ -735,38 +793,6 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
 
 <!-- END ////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  <div class="row">
-    <div>
-     <div class="text-left" style="background-color: #0f0f0f; padding: 1rem; border-radius: 1.5rem; margin-top: 1.5rem;">
-       <h class="text-white">
-         
-         Check Available Treasure Hunt by other Host
-         
-    
-        
-           <br>
-          </h>
-       
-          
-          <div class="text-left">
-          
-  
-             <div class="tex-left" >
-               <a href="./SearchGames.html" class="text-center" >
-                    <button style="background-color:  #0f0f0f; border: 1px solid ; border-radius: 1rem; padding: 0.5rem;" class=" ibutton text-center">
-                       <h4 class="text-white"> Check  </h4></button></a>
-                       <img class="vmg zg " src="./images/lopa (4).webp" width="50px"> 
-             </div>
-         </div>
-   </div>
-         
-    </div>
-    
-    
-   
-  
-  </div>
   
   
   <!-- //////////////// -->
@@ -775,9 +801,9 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
 <br>
   <!-- BEGINING ////////////////////////////////////////////////////////////////////////////////////////// -->
   
-  <div style=" background-color: #111111;  padding: 1rem; border-radius: 2rem;" class="text-white text-left" >
+  <div style="   padding: 1rem; border-radius: 2rem;" class="text-white text-center" >
   
- <p>The best way to enjoy the game is to Create your team of Hunters , Win Games & Share profits Equally</p>
+ <p style="color: #ffffff;">The best way to enjoy the game is to Create your team of Hunters , Win Games & Share profits Equally</p>
  <div class="texT-left" >
   <a style="text-decoration: none;" href="./CreateTeam2.html" class="text-left" >
        
@@ -786,7 +812,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
           Create
           
         </button>
-        <img style="max-width: 100%; background-color: #370846; border-radius: 20rem;" src="./images/lopa (4).webp" width="50">
+        <img style="max-width: 100%; background-color: #00ff80; border-radius: 20rem;" src="./images/lopa (4).webp" width="50">
    
         
       </b></h4>
@@ -808,35 +834,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
 
 
 
-<div class="row">
-  <div>
-   <div style="background-color: #0f0f0f; border: 1px solid rgb(24, 11, 39); padding: 1rem; border-radius: 2rem; margin-top: 1.5rem;">
-     <p class="text-white">
-       
-    Farm points(kod) and get free gameTag to play any gamehunts
-        </p>
-     
-        
-        <div class="text-left">
-        
 
-           <div class="tex-left" >
-             <a href="./farm.html" class="text-center " >
-                  <button style="background-color:  #6200ff; border: 1px solid black ; border-radius: 1rem; " class=" ibutton text-center">
-                     <h4 style="padding: 0.5rem;" class="text-black"> Farm Cod </h4></button></a>
-                     <img src="./images/lono.png" width="50" style="border-radius: 1rem; ">
-                     
-           </div>
-       </div>
-
- </div>
- 
-  </div>
-  
-  
- 
-
-</div>
 
 <!-- /////////////////////////////////////////////////////////////// -->
 
@@ -852,7 +850,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
 
 
  <section>
-  <nav style="position: fixed; " class="text-center">
+  <nav style="position: fixed; " class="text-center bcontain">
         
      
     <div class=" bottom-nav bottom-bar row  text-center ">
@@ -861,7 +859,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
             <a href="./home.html">
               <button class="buttonx">
          
-                <img class="tmage" src="./images/T (2).png" width="30">
+                <img class="tmage" src="./images/T (2).png" width="35">
                
            </button>
             </a>
@@ -874,7 +872,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
           <a href="./farm.html">
            <button class="buttonx ">
       
-             <img class="tmage" src="./images/T (1).png" width="30">
+             <img class="tmage" src="./images/T (1).png" width="35">
      </button>
 
           </a>
@@ -887,7 +885,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
         <a href="./profile.html"> <h2>
          <button class="buttonx text-center">
     
-             <img class="tmage" src="./images/T (3).png" width="30">
+             <img class="tmage" src="./images/T (3).png" width="35">
      </button>
      </h2></a>
         
@@ -898,7 +896,7 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
             <h2>
               <button class="buttonx text-center">
          
-                  <img class="tmage" src="./images/T (4).png" width="30">
+                  <img class="tmage" src="./images/T (4).png" width="35">
           </button>
           </h2>
           </a>
@@ -913,6 +911,15 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
   </section>
 <!-- END OF MOBILE DESIGN  PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP-->
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -937,565 +944,398 @@ border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
 
 <!-- BEGINING OF WEB DESIGN PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
 
-<section class="container-fluid WEB">
-     
+<Section style="background-image: url('./images/jiop.png'); background-size: contain;" class="WEB">
+  
 
-
-<!-- MAIN ROLE -->
-<div style="column-gap: 0.1rem;" class="row">
-
-
-  <!-- another column ppppppppppppppppppppppppppppppppppppppppppppppppppp -->
-  <div class="col-md-1">
-
-           
-  <!-- bottom Navigation Bar -->
-
-  <section style="position: fixed; " class="container">
-    <nav style="position: fixed;">
-          
-    <div class="   text-center ">
-      <div class=" text-center">
-          <h2 class="text-center">
-            <a href="./home.html">
-              <button class="buttonx">
-         
-                <img class="tmage" src="./images/T (2).png" width="30">
-                 
-           </button>
-            </a>
-          </h2>
-         
-      </div>
-       <br>
-      <div class=" text-center">
-        <h2>
-          <a href="./farm.html">
-           <button class="buttonx ">
-      
-             <img class="tmage" src="./images/T (1).png" width="30">
-        </button>
-
-          </a>
-       </h2>
-          </h2>
-         
-      </div>
-    <br>
-      <div class=" text-center">
-         <a href="./profile.html"> <h2>
-          <button class="buttonx ">
-     
-              <img class="tmage" src="./images/T (3).png" width="30">
-      </button>
-      </h2></a>
-         
-      </div>
-     <br>
-      <div class=" text-center">
-          <h2>
-              <button class="buttonx ">
-         
-                  <img class="tmage" src="./images/T (4).png" width="30">
-          </button>
-          </h2>
-         
-      </div>
-     
-  </div>
-  <br><br><br>
-  <div>
-    <img src="./images/K (2).png" width="70">
-  </div>
-    </nav>
-    </section>
-
-
-
-  </div>
-
-
-<!-- another column ppppppppppppppppppppppppppppppppppppppppppppppppppp -->
-<div  style="background-color: #000000; padding: 1rem; border-radius: 2rem;" class="col">
-        
-
-  <div class="container ">
-   
+<div style="margin-left: 20rem; margin-right: 20rem; padding: 3rem;
+     border: 5px solid rgb(17, 17, 17); border-radius: 6rem; background-color: #000000;">
+  
   <!-- the body of the page -->
   
   <!-- The profile Header -->
   <section style="margin-top: 0.1rem; margin-bottom: 1rem; "  class="text-left  ">
-  <div class="text-left">
-    <button style="background-color: #6f00ff; border: 1px solid rgb(24, 11, 39); padding: 0.3rem; border-radius: 2rem; ">
-      <div class=" text-white  o8 ">
-        <img class="p-img" src="./images/dog (4).jpg" width="40"  >
-        @kiel  👏
-        </div>
-    </button>
-  </div>
+    <div class="text-center">
+      <button style="background-color: #7300ff; border: 2px solid rgb(99, 63, 141); padding: 0.3rem; border-radius: 2rem; ">
+        <div class=" text-white  o8 ">
+          <img class="p-img" src="./images/00 (1).png" width="40"  >
+          @kiel  👏
+          </div>
+      </button>
+    </div>
   
   
   </section>
   <!-- The profile header -->
-  
+    
   
   
   <!-- the earnings section -->
-  <section class="text-left">
-  <div>
-    <b class="text-white">Earnings</b>
-    <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
+   <section class="text-center">
+    <div>
+      <b class="text-white">Earnings - Paid</b>
+      <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
+    </div>
+  
+    <div class="text-center text-white">
+         
+    
+     </div>
+   </section>
+  
+  
+  
+    <!-- Transaction Navigation -->
+    <div class="button-container">
+      <div class="button">
+        <a style="text-decoration: none;" href="./hosting.html" class="button">
+          <i><img src="./images/arrow-upper-right.png" width="30"></i>
+          <span>Host Game</span>
+        </a>
+      </div>
+      <div class="button">
+          <a style="text-decoration: none;" href="#" class="button">
+            
+            <i><img src="./images/plus.png" width="30"></i>
+          <span>Join</span>
+          </a>
+      </div>
+      <div class="button">
+          <a style="text-decoration: none;" href="./game.html" class="button">
+            <i><img src="./images/arrow (1).png" width="30"></i>
+          <span>Game Hunt</span>
+          </a>
+      </div>
+    </div>
+    <!-- -------------------- -->
+    
+  
+     <br>
+  <div style=" 
+  border: 0px solid rgb(54, 54, 54); padding: 1rem; border-radius: 1.5rem; ">
+  
+    <div  class="text-center text-white">
+      <a style="color: #9900ff; text-decoration: none;" href="./hosting.html">Host your Game </a>.
+       Set your prize . Sell Your Tags . Earn Your Profit | Find treasure in <a style="color: #8400ff; text-decoration: none;">Game Hunts</a> Win Big
+        
+       </div>
+    
+       
+     
   </div>
   
-  <div class=" text-white">
-       
-         
-  <b><img src="./images/K (2).png" width="30">   Wallet id : KIEL009</b>
-   
-   </div>
+  
+  <!-- ///////////// -->
+  <!-- -------------------------------------------------------------------------- -->
+  <div class="row">
+    <div class="col">
+      <div class="text-left  ">
+        <button  style="background-color: #242424; border: 1px solid rgb(0, 0, 0);  padding: 0.7rem; border-radius: 1rem;">
+          <div style="font-size: 1rem;" class="text-white ">
+            Current Games
+          </div>
+         </button>
+       </div>
+    </div>
+  
+    <div class="col">
+      <div class="text-end  ">
+        <a href="./SearchGames.html">
+          <button  style="background-color: #0a0a0a; border: 1px solid rgb(132, 0, 255);  padding: 0.7rem; border-radius: 1rem;">
+          <div style="font-size: 1.3rem;" class="text-white ">
+           <img src="./images/search (1).png" width="30">
+          </div>
+         </button></a>
+       </div>
+    </div>
+  </div>
+  
+     <!-- The current games -->
+  <br>
+  
+  <div>
+    <h class="text-white">
+           
+      Search for more Treasure Hunt by other Host
+      
+       </h>
+  </div>
+  <br>
+  <!-- ----------------------------------------------------------------------------------- -->
+  
+<section>
+  
+  <div class=" mt-1 ">
+    <div class="row" style="column-gap: 0rem;">
+        <div class="col col-md-6 mb-3">
+            <a style="text-decoration: none;" href="./Description.html">
+              <div class="custom-card">
+                <div class="row">
+                    <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
+                    <div class="col-9 text-center">
+                        <div class="custom-inner-card">Nodoe</div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">ASSET | PRIZE</div>
+               
+                <div class="text-center">$8.5K</div>
+            </div>
+            </a>
+        </div>
+        <div class="col col-md-6 mb-3">
+            <a style="text-decoration: none;" href="./Description.html">
+              <div class="custom-card">
+                <div class="row">
+                    <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
+                    <div class="col-9 text-center">
+                        <div class="custom-inner-card">DreXZ</div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">ASSET | PRIZE</div>
+               
+                <div class="text-center">$100k</div>
+            </div>
+            </a>
+        </div>
+    </div>
+  </div>
+  
+  
+  <!-- -------------------------------------------------------------- -->
+  
   </section>
   
   
-  <!-- The action be it game or host -->
-  <br>
-  
-  <!-- Transaction Navigation -->
-  <div class="button-container-r">
-    <div class="button">
-      <a style="text-decoration: none;" class="button" href="./hosting.html">
-          <i><img src="./images/plus.png" width="20"></i>
-        <span>Host Game</span>
-      </a>
-    </div>
-    <div class="button">
-        <a style="text-decoration: none;" class="button" href="#">
-          <i><img src="./images/arrow-upper-right.png" width="20"></i>
-        <span>Join</span>
-        </a>
-    </div>
-    <div class="button">
-        <a style="text-decoration: none;" class="button" href="./game.html">
-          <i><img src="./images/arrow (1).png" width="20"></i>
-        <span>Game Hunt</span>
-        </a>
-    </div>
-  </div>
-  <!-- -------------------- -->
-  
-  
-         
+  <!-- ------------------------------------------ -->
   
   
   
-    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  <div class="row">
+  
+  <!-- ----------------------------------------------------------------------------------- -->
+  <section>
+    
     <div>
-     <div style="background-color: #0f0f0f;  padding: 1rem; border-radius: 1.5rem; margin-top: 1.5rem;">
-       <p class="text-white">
-         
-         Check Available Treasure Hunt by other Host
-         
-          
-        
-        
-           <br>
-          
-         
-          </p>
-       
-          
-          <div class="text-left">
-          
-  
-             <div class="tex-left" >
-               <a href="./SearchGames.html" class="text-center" >
-                    <button style="background-color:  #6f00ff; border: 1px solid ; border-radius: 1rem; padding: 0.5rem;" class=" ibutton text-center">
-                       <h4 class="text-black"> Check  </h4></button></a>
-                       <img class="vmg zg " src="./images/lopa (4).webp" width="50px"> 
-             </div>
-         </div>
-   </div>
-         
+      <div class="row" style="column-gap: 0rem;">
+          <div class="col col-md-6 mb-3">
+             <a style="text-decoration: none;" href="./Description.html">
+              <div class="custom-card">
+                <div class="row">
+                    <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
+                    <div class="col-9 text-center">
+                        <div class="custom-inner-card">Nodoe</div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">ASSET | PRIZE</div>
+              
+                <div class="text-center">$8.5K</div>
+            </div>
+             </a>
+          </div>
+          <div class="col col-md-6 mb-3">
+             <a style="text-decoration: none;" href="./Description.html">
+              <div class="custom-card">
+                <div class="row">
+                    <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
+                    <div class="col-9 text-center">
+                        <div class="custom-inner-card">DreXZ</div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">ASSET | PRIZE</div>
+              
+                <div class="text-center">$100k</div>
+            </div>
+             </a>
+          </div>
+      </div>
     </div>
     
     
-   
-  
-  </div>
-  
-  
-  
-   
-   <br>
+    <!-- -------------------------------------------------------------- -->
+    
+    </section>
+    
+    
+    <!-- ------------------------------------------ -->
   
   
   
-  <!-- BEGINING ////////////////////////////////////////////////////////////////////////////////////////// -->
   
-   <div style=" background-color: #0c0c0c;  padding: 1rem; border-radius: 2rem;" class="text-white text-left" >
-   <br><br>
-  <p>The best way to enjoy the game is to Create your team of Hunters , Win Games & Share profits Equally</p>
-  <div class="texT-left" >
-  <a href="./CreateTeam2.html" class="text-left" >
-       
-      <h4 class="text-black"><b>
-        <button style="background-color:  #6f00ff; border: 1px solid ; border-radius: 1rem; padding: 0.5rem;" class=" ibutton text-center">
-          Create
+    
+  <!-- ----------------------------------------------------------------------------------- -->
+  <section>
+    
+    <div class=" mt-1 ">
+      <div class="row" style="column-gap: 0rem;">
+          <div class="col col-md-6 mb-3">
+             <a style="text-decoration: none;" href="./Description.html">
+              <div  class="custom-card">
+                <div class="row">
+                    <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
+                    <div class="col-9 text-center">
+                        <div class="custom-inner-card">Nodoe</div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">ASSET | PRIZE</div>
+               
+                <div class="text-center">$8.5K</div>
+            </div>
+             </a>
+          </div>
+          <div class="col col-md-6 mb-3">
+             <a  href="./Description.html">
+              <div class="custom-card">
+                <div class="row">
+                    <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
+                    <div class="col-9 text-center">
+                        <div class="custom-inner-card">DreXZ</div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">ASSET | PRIZE</div>
+               
+                <div class="text-center">$100k</div>
+            </div>
+             </a>
+          </div>
+      </div>
+    </div>
+    
+    
+    <!-- -------------------------------------------------------------- -->
+    
+    </section>
+  
+  
+  
+  <div style="max-width: fit-content; background-color: #131313;  padding: 0.7rem; border-radius: 1rem;">
+    <div style="font-size: 1.3rem;" class="text-white">
+      +567 more
+    </div>
+   </div>
+  
+  
+  
+  <!-- END ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  
+    
+    
+    <!-- //////////////// -->
+  
+  
+  <br>
+    <!-- BEGINING ////////////////////////////////////////////////////////////////////////////////////////// -->
+    
+    <div style="   padding: 1rem; border-radius: 2rem;" class="text-white text-center" >
+    
+   <p>The best way to enjoy the game is to Create your team of Hunters , Win Games & Share profits Equally</p>
+   <div class="texT-left" >
+    <a style="text-decoration: none;" href="./CreateTeam2.html" class="text-left" >
+         
+        <h4 class="text-black"><b>
+          <button style="background-color:  #6f00ff; border: 1px solid ; border-radius: 1rem; padding: 0.5rem;" class=" ibutton text-center">
+            Create
+            
+          </button>
+          <img style="max-width: 100%; background-color: #370846; border-radius: 20rem;" src="./images/lopa (4).webp" width="50">
+     
           
-        </button>
+        </b></h4>
+          </a>
         
-      </b></h4>
-        </a>
-      
-  
+    
   </div>
   
   
   
   </div>
+  
+  
   <!-- END /////////////////////////////////////////////////////////////////////////////////////////////////// -->
    
     
   
   <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   
-  <br>
+  
+  </div>
   
   
   <!-- /////////////////////////////////////////////////////////////// -->
   
-      
-  
-  
-  
-  
-  
-  </div>
-     </div>
-  <!-- 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
-
-
-  
-<!-- another column ppppppppppppppppppppppppppppppppppppppppppppppppppp -->
-
-<div class="col">
-
-
-  <!-- Begin ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  
-  
-    <div style="max-width: fit-content; background-color: #11081b; border: 1px solid rgb(24, 11, 39);  padding: 0.7rem; border-radius: 1rem;">
-      <div style="font-size: 1.3rem;" class="text-white">
-        Current Games
-      </div>
-     </div>
-  
-     <!-- The current games -->
-  
-  
-  <!-- ----------------------------------------------------------------------------------- -->
-  <section>
-    
-    <div class=" mt-2 ">
-      <div class="row" style="column-gap: 0rem;">
-          <div class="col col-md-6 mb-3">
-              <div class="custom-card">
-                  <div class="row">
-                      <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
-                      <div class="col-9 text-center">
-                          <div class="custom-inner-card">Nodoe</div>
-                      </div>
-                  </div>
-                  <div class="text-center mt-2">ASSET | PRIZE</div>
-                  <hr>
-                  <div class="text-center">$8.5K</div>
-              </div>
-          </div>
-          <div class="col col-md-6 mb-3">
-              <div class="custom-card">
-                  <div class="row">
-                      <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
-                      <div class="col-9 text-center">
-                          <div class="custom-inner-card">DreXZ</div>
-                      </div>
-                  </div>
-                  <div class="text-center mt-2">ASSET | PRIZE</div>
-                  <hr>
-                  <div class="text-center">$100k</div>
-              </div>
-          </div>
-      </div>
-    </div>
-    
-    
-    <!-- -------------------------------------------------------------- -->
-    
-    </section>
-    
-    
-    <!-- ------------------------------------------ -->
-    
-    
-    
-    
-    <!-- ----------------------------------------------------------------------------------- -->
-    <section>
-      
-      <div>
-        <div class="row" style="column-gap: 0rem;">
-            <div class="col col-md-6 mb-3">
-                <div class="custom-card">
-                    <div class="row">
-                        <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
-                        <div class="col-9 text-center">
-                            <div class="custom-inner-card">Nodoe</div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-2">ASSET | PRIZE</div>
-                    <hr>
-                    <div class="text-center">$8.5K</div>
-                </div>
-            </div>
-            <div class="col col-md-6 mb-3">
-                <div class="custom-card">
-                    <div class="row">
-                        <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
-                        <div class="col-9 text-center">
-                            <div class="custom-inner-card">DreXZ</div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-2">ASSET | PRIZE</div>
-                    <hr>
-                    <div class="text-center">$100k</div>
-                </div>
-            </div>
-        </div>
-      </div>
-      
-      
-      <!-- -------------------------------------------------------------- -->
-      
-      </section>
-      
-      
-      <!-- ------------------------------------------ -->
-    
-    
-  
-  <!-- ----------------------------------------------------------------------------------- -->
-  <section>
-    
-    <div class=" mt-2 ">
-      <div class="row" style="column-gap: 0rem;">
-          <div class="col col-md-6 mb-3">
-              <div class="custom-card">
-                  <div class="row">
-                      <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
-                      <div class="col-9 text-center">
-                          <div class="custom-inner-card">Nodoe</div>
-                      </div>
-                  </div>
-                  <div class="text-center mt-2">ASSET | PRIZE</div>
-                  <hr>
-                  <div class="text-center">$8.5K</div>
-              </div>
-          </div>
-          <div class="col col-md-6 mb-3">
-              <div class="custom-card">
-                  <div class="row">
-                      <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
-                      <div class="col-9 text-center">
-                          <div class="custom-inner-card">DreXZ</div>
-                      </div>
-                  </div>
-                  <div class="text-center mt-2">ASSET | PRIZE</div>
-                  <hr>
-                  <div class="text-center">$100k</div>
-              </div>
-          </div>
-      </div>
-    </div>
-    
-    
-    <!-- -------------------------------------------------------------- -->
-    
-    </section>
-    
-    
-    <!-- ------------------------------------------ -->
-    
-    
-    
-    
-    <!-- ----------------------------------------------------------------------------------- -->
-    <section>
-      
-      <div>
-        <div class="row" style="column-gap: 0rem;">
-            <div class="col col-md-6 mb-3">
-                <div class="custom-card">
-                    <div class="row">
-                        <div class="col-3"><img src="./images/dog (3).jpg" width="50" alt="Dog Image"></div>
-                        <div class="col-9 text-center">
-                            <div class="custom-inner-card">Nodoe</div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-2">ASSET | PRIZE</div>
-                    <hr>
-                    <div class="text-center">$8.5K</div>
-                </div>
-            </div>
-            <div class="col col-md-6 mb-3">
-                <div class="custom-card">
-                    <div class="row">
-                        <div class="col-3"><img src="./images/dog (4).jpg" width="50" alt="Dog Image"></div>
-                        <div class="col-9 text-center">
-                            <div class="custom-inner-card">DreXZ</div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-2">ASSET | PRIZE</div>
-                    <hr>
-                    <div class="text-center">$100k</div>
-                </div>
-            </div>
-        </div>
-      </div>
-      
-      
-      <!-- -------------------------------------------------------------- -->
-      
-      </section>
-      
-      
-      <!-- ------------------------------------------ -->
-    
-    
-      
-  
-  <!-- END ////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  
-     
    
-      
   
-      
+  <br><br><br>
   
-      
+  
+   <!-- bottom Navigation Bar -->
+  
+  
+   
+  
+  
+   <section>
+    <nav style="position: fixed; " class="text-center">
+          
        
-        
-        <div style=" background-color: #06030a; border: 1px solid rgb(24, 11, 39);
-         padding: 1rem; border-radius: 2rem; margin-top: 1.5rem;">
-      
-          <p class="text-white">
-            Host your Game . Set your prize . Sell Your Tags . Earn Your Profit
-              <br>
-             
-            <p class="text-white"> Subscribe Users Only </p>
-             </p>
-          
-             
-             <div class="text-left">
-             
-  
-            </div>
-      </div>
-  
-      <!-- ///////////////// -->
-      <br>
-      
-  <div class="row">
-    <div>
-      <div style="background-color: #06030a; border: 1px solid rgb(24, 11, 39);  padding: 1rem; border-radius: 1.5rem; margin-top: 1.5rem;">
-        <p class="text-white">
-          
-       Farm points(kod) and get free gameTag to play any gamehunts
-           </p>
-        
+      <div class=" bottom-nav bottom-bar row  text-center ">
+        <div class="col col-lg-3 col-md-3 text-center">
+            <h2>
+              <a href="./home.html">
+                <button class="buttonx">
            
-           <div class="text-left">
+                  <img class="tmage" src="./images/T (2).png" width="35">
+                 
+             </button>
+              </a>
+            </h2>
            
-   
-              <div class="tex-left" >
-                <a href="./farm.html" class="text-center " >
-                     <button style="background-color:  #6200ff; border: 1px solid black ; border-radius: 1rem; " class=" ibutton text-center">
-                        <h4 style="padding: 0.5rem;" class="text-white"> <b>Farm Kod</b> </h4></button></a>
-                        <img src="./images/lono.png" width="50" style="border-radius: 1rem; ">
-                        
-              </div>
-          </div>
-   
-    </div>
-   
-    </div>
-    
-    
-   
+        </div>
   
-  </div>
+        <div class="col col-lg-3 col-md-3 text-center">
+          <h2>
+            <a href="./farm.html">
+             <button class="buttonx ">
+        
+               <img class="tmage" src="./images/T (1).png" width="35">
+       </button>
+  
+            </a>
+         </h2>
+           
+        </div>
+  
+  
+        <div class="col col-lg-3 col-md-3 text-center">
+          <a href="./profile.html"> <h2>
+           <button class="buttonx text-center">
+      
+               <img class="tmage" src="./images/T (3).png" width="35">
+       </button>
+       </h2></a>
+          
+       </div>
+  
+        <div class="col col-lg-3 col-md-3 text-center">
+            <a href="./Notification.html">
+              <h2>
+                <button class="buttonx text-center">
+           
+                    <img class="tmage" src="./images/T (4).png" width="35">
+            </button>
+            </h2>
+            </a>
             
-       
-       
-       
-      
-  
-  </div>
-  
-  
-  
-  
-  
-
-<!-- another Column -->
-<div class="col">
-  <div>
-  
-
-
-    <div>
-      <p>
-      
-        
-       
-  
-        <div  style="background-color: #06030a; border: 1px solid rgb(24, 11, 39); padding: 2rem; border-radius: 2rem; color: #ffffff; ">
-          
-  Introduction:
-  Step into a world where treasure hunting meets digital innovation. Our game offers an immersive experience filled with mystery and adventure, challenging players to unlock hidden riches through logic and wit.
-  <hr>
-  Key Features:
-  1. Logical Thinking: Dive into a world of cryptic puzzles and enigmatic clues, where each challenge demands strategic thinking and deductive reasoning.
-  <hr>
-  2. Collaboration: Form alliances with fellow adventurers to conquer obstacles together, fostering teamwork and camaraderie.
-  <hr>
-  3. Immersive Gameplay: Embark on a thrilling journey filled with adrenaline-pumping moments and stunning visuals, where every discovery brings a sense of triumph and wonder.
-  
-  Conclusion:
-  Experience the thrill of the hunt like never before. Our treasure hunting game combines the excitement of adventure with the mental challenge of logical thinking, creating an unforgettable gaming experience that will captivate players of all ages.
-     
+           
         </div>
   
-   </p>
-  
-   
+       
+       
     </div>
-     <br>
-   
-  
-  
-  
-  
-  
-  
-    </div>
-</div>
+    </nav>
+    </section>
 
 
-   </div>
 
-
-</div>
-
-</section>
+</Section>
+ 
     
 
 

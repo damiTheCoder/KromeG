@@ -12,17 +12,18 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
-      @media( max-width:1000px){
-         .WEB{
-          display: none;
-         }
-      }
+          
+          @media (max-width: 1000px) {
+   .WEB{
+    display: none;
+   }
+  }
 
-      @media(min-width:1000px){
-            .MOB{
-              display: none;
-            }
-      }
+@media (min-width: 1000px) {
+   .MOB{
+    display: none;
+   }
+  }
 
       .p-img{
         border-radius: 5rem;
@@ -40,277 +41,75 @@
         }
 
   
-        #chat-btn{
-            position: fixed;
-             top: 30%;
-            right: 0;
-            transform: translateY(-50%);
-            z-index: 9999;
-            font-weight: bold;
-            background-color: rgb(132, 0, 255);
-            color: rgb(255, 255, 255);
-            border: 1.5px solid rgb(0, 0, 0);
-             border-radius: 5px;
-             padding-top: 5px;
-             padding-bottom: 5px;
-           cursor: pointer;
-    }
-
-		.chat-message {
-			color: #ffffff;
-     
-      border-radius: 1em;
-			padding: 10px;
       
-      margin-bottom: 0.2rem;
-
-		
-		}
-    
-
-     .chat-offcanvas {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-   
-    border-radius: 2rem;
-    left: -300px;
-    width: 300px;
-    color: #ffffff;
-    background-color: #040105;
-    overflow-y: auto;
-    padding: 20px;
-    transition: left 0.3s ease;
-    z-index: 9999; /* Add a high z-index value to ensure the off-canvas body stays on top */
-}
-
-		.chat-offcanvas.active {
-			left: 0;
-		}
-
-		.chat-offcanvas-toggle {
-            position: fixed;
-    top: 45%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 9999;
-    background-color: rgb(111, 0, 255);
-    border: 2px solid rgb(0, 0, 0);
-    color: white;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    cursor: pointer;
-			/* cursor: pointer; */
-		}
-
-		.chat-offcanvas-title {
-			margin-top: 0;
-		}
-
-		.chat-offcanvas-cancel {
-			margin-top: 10px;
-			background-color: #000000;
-			border: none;
-    
-			padding: 10px;
-			cursor: pointer;
-		}
-
-      
-
-      
-.box {
-    width: 50px;
-    height: 50px;
-  
-    display: inline-block;
-   
-    cursor: pointer;
-    border-radius: 1rem;
-}
-
-
-#game-board {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 1rem;
-}
-
-.box {
-width: 18%;
-padding-bottom: 18%;
-margin: 0.5rem;
-
-
-background-color: #1c1229;
-
-border-radius: 1rem;
-cursor: pointer;
-
-}
-
- 
-
-.box[data-color="yellow"] {
-            background-color: yellow;
+    .box {
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            margin: 5px;
+           background-color: #242424;
+           border-radius: 1rem;
+            cursor: pointer;
         }
-        
-        .box[data-opened="true"] {
-            background-color: green;
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
         }
-
-@media (max-width: 768px) {
-.box {
-width: 15.33%;
-padding-bottom: 15.33%;
-}
-}
-
-@media (max-width: 576px) {
-.box {
-width: 15%;
-padding-bottom: 15%;
-}
-}
-
-@media (max-width: 400px) {
-.box {
-width: 15%;
-padding-bottom: 15%;
-}
-}
-
-
+        .modal-content {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+            border: 3px solid rgb(31, 31, 31);
+            border-radius: 2rem;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+        }
+        .close-btn {
+            background-color: #9900ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 55px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        /* Media queries to show/hide sections */
+        @media (max-width: 600px) {
+            #web-view {
+                display: none;
+            }
+            #mobile-view {
+                display: block;
+            }
+        }
+        @media (min-width: 601px) {
+            #mobile-view {
+                display: none;
+            }
+            #web-view {
+                display: block;
+            }
+        }
 
 
 	</style>
 </head>
 <body class="bg-black  ">
-  
-       <!-- My Navigation menu ------------------------------------------------------ -->
- <nav>
-  
-       
-
-  <section>
-
-    
-
-    <!-- a row and 2 columns are created here -->
-  
-    <div>
-       <div>
-           
-  <!-- Button trigger modal -->
-  
-  <div style="position: fixed;right: 0; padding: 1rem;"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-     <img src="./images/menu (3).png">
-   </div>
-  
-   <br>
-   <!-- Modal -->
-   <div   class="modal fade  "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-     <div class="modal-dialog  " >
-         
-       <div style="background-color: #06030a; border: 1px solid rgb(24, 11, 39); border-radius: 2rem;  " class="modal-content mf">
-  
-         <div class="modal-header " >
-  
-           <p data-bs-dismiss="modal" aria-label="Close">
-            <img src="./images/x.png"></p>
-         </div>
-         
-         
-         <div class="modal-body  ">
-          
-           
-  
-  
-  
-         <br>
-          
-        
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item ">
-            <a class="nav-link active text-black" aria-current="page" href="#"><p class="offp">
-              <img style="background-color: #9c5cd8; border-radius: 1rem;" src="./images/lono.png" width="40">
-              <b style="color: #a200ff;">Hosted Games</b></p></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-black" href="#"><p class="offp">
-              <img style="border-radius: 1rem;" src="./images/dog (3).jpg" width="40" >
-              <b style="color: #8400ff; ">Customer support
-              </b></p></a>
-          </li>
-
-          <li class="nav-item text-black" >
-            <a class="nav-link text-black" href="#"><p class="offp">
-              <img style="border-radius: 1rem;" src="./images/dog (2).jpg" width="40" >
-              <b style="color: #8c00ff;">Scan to load</b></p></a>
-          </li>
 
 
-          
-          <li class="nav-item text-black">
-            <a class="nav-link text-black" href="./farm.html"><p class="offp">
-              <img style="border-radius: 1rem;" src="./images/Pepinilo.jpg" width="40">
-              <b style="color: #00ff88;">FarmPoints(Free Tag)</b></p></a>
-          </li>
-
-          <li class="nav-item text-black">
-              <a class="nav-link text-black" href="./CreateFarm.html"><p class="offp">
-                <img style="border-radius: 1rem;" src="./images/Pepinilo.jpg" width="40">
-                <b style="color: #e5ff00;">CreateYour GameCampaign</b></p></a>
-            </li>
-          <p class="text-white"><b>Follow our socials</b></p>
-        
-            
-            <li>
-             <p class="offp text-white">  <a style="text-decoration: none; color: white; " href="#">
-              <img src="./images/twitter (2).png" width="40">
-              Twitter
-            </a></p>
-            </li>
-
-            <li>
-              <p class="offp text-white">  
-                 <a href="#"><img src="./images/tiktok (1).png" width="40"></a>
-                 Tiktok
-              </p>
-             </li>
-
-           
-        
-          
-        </ul>
-
-       
-
-        
-        
-       
   
-       </div>
-         
-     </div>
-     </div>
-   </div>
   
-       </div>
-  <!-- //////////////// second column -->
-     
   
-    </div>
-   
-  
-  </section>
- </nav>
- <!-- my Navigation Menu Ends -->
-
- <!-- my Navigation Menu Ends -->
 
 <div>
   
@@ -327,56 +126,23 @@ padding-bottom: 15%;
 
  <!-- Content starts -->
 
- <!-- The Chatting system starts -->
 
- <button id="chat-btn"  >Chat others</button>
 
- <button   class="chat-offcanvas-toggle">View Chat</button>
- <div class="offcanvas">
-     <h2 class="offcanvas-title">Navigation</h2>
-     
- </div>
-<!-- The body of the Chat -->
- <div style="border-radius: 0rem;" class="chat-offcanvas">
-     <h4 class="chat-offcanvas-title"> <img style="border-radius: 1rem;" src="./images/K (2).png" width="30">
-        Chat Messages <p class="text-info">
-      <br> 
-      <img style="background-color: #faffb1;" class="vmg zg " src="./images/lopa (3).webp" width="40px"> 
-      <img style="background-color: #98ffb7;" class="vmg wg " src="./images/lopa (2).webp" width="40px"> 
-       <img style="background-color: #e2bfff;" class="vmg kg " src="./images/lopa (4).webp" width="40px">
-       
-    </p> </h4>
-    
-  <div>
+
+
+
+
+<!-- The modal message if they havent find the Treasuree -->
  
-    <div>
-    <a href="#">
-      <button style="padding: 0.5rem; margin-bottom: 0.5rem;background-color: #06030a; border: 1px solid rgb(24, 11, 39);; 
-      border-radius: 0.5rem; color: white; 
-      " class="ct">Chat-Team</button>
-    </a>
- 
-   <br>
-      <a href="#">
-        <button style="padding: 0.5rem; border: 0px solid ; background-color: #06030a; border: 1px solid rgb(24, 11, 39);;
-      border-radius: 0.5rem; color: white;" class="ct">Chat-Others</button>
-      </a>
-      
-    </div>
-
-  
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <p id="modal-message"></p>
+          <button class="close-btn" onclick="closeModal()">Close</button>
+      </div>
   </div>
 
-     <!-- Chat messages will be added here -->
-     
-     <button style="border-radius: 2rem;" class="chat-offcanvas-cancel bg-black"><img src="./images/x.png"></button>
-
- </div>
-
-  <!-- chat system ends -->
-
-
-  
+  <!-- ---------------------------------------------------------------- -->
  
 
  
@@ -390,49 +156,60 @@ padding-bottom: 15%;
   
    
 
-  <section  class="container-fluid ">
-    <div class="text-center text-white">
-      <!-- Profile header ------------------------------------>
-      <div style="margin-top: -2rem;" class="text-center">
-        <button style="background-color: #6f00ff; border: 1px solid rgb(24, 11, 39); padding: 0.3rem; border-radius: 2rem; ">
-          <div style="font-size: 1.2rem;" class=" text-white  o8 ">
-            <img  class="p-img" src="./images/dog (4).jpg" width="40"  >
-            @kiel  👏
-            </div>
-        </button>
-    </div>
-
-    <!-- Profile Header End ---------------------------------------------- -->
-       
-         
-      <b><img src="./images/K (2).png" width="30">  Asset | Prize </b>
-       
-       </div>
-
-    <div class="text-white text-center">
-
-      <button style="color: #ffffff; font-size: 3rem; font-weight: 400; ; 
-      background-color: #000000; border: 1px solid black; border-radius: 1rem;">$55004</button>
+  <section  class="MOB text-center">
+    
       
-      
-      
+<!-- The profile Header -->
+<section style="margin-top: 0.1rem; margin-bottom: 1rem; "  class="text-left  ">
+  <div class="text-center">
+    <button style="background-color: #7300ff; border: 2px solid rgb(99, 63, 141); padding: 0.3rem; border-radius: 2rem; ">
+      <div class=" text-white  o8 ">
+        <img class="p-img" src="./images/00 (1).png" width="40"  >
+        @kiel  👏
+        </div>
+    </button>
+  </div>
 
-    </div>
+
+</section>
+<!-- The profile header -->
   
+
+
+<!-- the earnings section -->
+ <section class="text-center">
+  <div>
+    <b class="text-white">Earnings - Paid</b>
+    <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
+  </div>
+
+  <div class="text-center text-white">
+       
+  
+   </div>
+ </section>
+
     
-    <div style="background-color: #06030a; border: 1px solid rgb(24, 11, 39); color:  #ffffff; margin-top: 0.5rem;  padding: 1rem; border-radius: 1rem;"
-     class=" text-center">
-     
-     <b>Winners needed 9  Per-Winner $6100</b></div>
-    
+<!-- The Game Itself ------------------------------------------------------- -->
+   <!-- Mobile View Section -->
     
    
+
 
    
     
   </section>
 
+<!-- The Game itself --------------------------------------------------------------------- -->
 
+ <div class="text-center">
+  <!-- Mobile View Section -->
+ <div id="mobile-view">
+  <div id="mobile-game-board"></div>
+</div>
+ </div>
+
+ <!-- The Game Itself ------------------------------------------------------------- -->
  
   
 
@@ -442,20 +219,14 @@ padding-bottom: 15%;
 
 <!-- /////////////// The Html Design for the Game -->
  
-  <div style="background-color: #06030a;  padding: 0.2rem; border-radius: 1rem; max-width: 100%;" 
-  class="text-center" id="game-board">
-  </div>
+  
+    
+
 
  <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
 
    
-  <div >
-   <h1 class="text-center text-white">
-    - - - - - - - - - 
-   </h1>
-    
-   
-    </div>
+  
 
 
     
@@ -464,9 +235,80 @@ padding-bottom: 15%;
 
 
  </div>
- <br><br>
+
  <!-- bottom Navigation Bar -->
- <section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Web View Starst Here ---------------------------------------------------------- -->
+<section style="background-image: url('./images/jiop.png'); background-size: contain;" class="WEB">
+
+ <div style="margin-left: 20rem; margin-right: 20rem; padding: 3rem;
+     border: 5px solid rgb(17, 17, 17); border-radius: 6rem; background-color: #000000;">
+  
+
+      
+<!-- The profile Header -->
+<section style="margin-top: 0.1rem; margin-bottom: 1rem; "  class="text-left  ">
+  <div class="text-center">
+    <button style="background-color: #7300ff; border: 2px solid rgb(99, 63, 141); padding: 0.3rem; border-radius: 2rem; ">
+      <div class=" text-white  o8 ">
+        <img class="p-img" src="./images/00 (1).png" width="40"  >
+        @kiel  👏
+        </div>
+    </button>
+  </div>
+
+
+</section>
+<!-- The profile header -->
+  
+
+
+<!-- the earnings section -->
+ <section class="text-center">
+  <div>
+    <b class="text-white">Earnings - Paid</b>
+    <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
+  </div>
+
+  <div class="text-center text-white">
+       
+  
+   </div>
+ </section>
+
+
+<div class="text-center">
+  
+    <!-- Web View Section -->
+    <div id="web-view">
+    
+      <div id="web-game-board"></div>
+  </div>
+</div>
+ </div>
+</section>
+
+<br><br><br>
+
+
+<!-- Navigation menu -->
+ 
+
+<section>
   <nav style="position: fixed; " class="text-center">
         
      
@@ -476,7 +318,7 @@ padding-bottom: 15%;
             <a href="./home.html">
               <button class="buttonx">
          
-                <img class="tmage" src="./images/T (2).png" width="30">
+                <img class="tmage" src="./images/T (2).png" width="35">
                
            </button>
             </a>
@@ -489,7 +331,7 @@ padding-bottom: 15%;
           <a href="./farm.html">
            <button class="buttonx ">
       
-             <img class="tmage" src="./images/T (1).png" width="30">
+             <img class="tmage" src="./images/T (1).png" width="35">
      </button>
 
           </a>
@@ -502,7 +344,7 @@ padding-bottom: 15%;
         <a href="./profile.html"> <h2>
          <button class="buttonx text-center">
     
-             <img class="tmage" src="./images/T (3).png" width="30">
+             <img class="tmage" src="./images/T (3).png" width="35">
      </button>
      </h2></a>
         
@@ -513,7 +355,7 @@ padding-bottom: 15%;
             <h2>
               <button class="buttonx text-center">
          
-                  <img class="tmage" src="./images/T (4).png" width="30">
+                  <img class="tmage" src="./images/T (4).png" width="35">
           </button>
           </h2>
           </a>
@@ -526,6 +368,17 @@ padding-bottom: 15%;
   </div>
   </nav>
   </section>
+
+
+
+
+
+
+
+
+
+
+
 
  
 
