@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,45 +11,37 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
-          
-          @media (max-width: 1000px) {
-   .WEB{
-    display: none;
-   }
-  }
-
-@media (min-width: 1000px) {
-   .MOB{
-    display: none;
-   }
-  }
-
-      .p-img{
-        border-radius: 5rem;
-      }
-      
-
-    
-
-
-
-
-.o8{
-          font-size:1rem;
-          color: #ffffff;
+        @media (max-width: 1000px) {
+            .WEB {
+                display: none;
+            }
         }
 
-  
-      
-    .box {
+        @media (min-width: 1000px) {
+            .MOB {
+                display: none;
+            }
+        }
+
+        .p-img {
+            border-radius: 5rem;
+        }
+
+        .o8 {
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        .box {
             width: 70px;
             height: 70px;
             display: inline-block;
             margin: 5px;
-           background-color: #242424;
-           border-radius: 1rem;
+            background-color: #242424;
+            border-radius: 1rem;
             cursor: pointer;
         }
+
         .modal {
             display: none;
             position: fixed;
@@ -64,6 +55,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .modal-content {
             background-color: #000000;
             color: #ffffff;
@@ -74,6 +66,7 @@
             width: 300px;
             margin: auto;
         }
+
         .close-btn {
             background-color: #9900ff;
             color: white;
@@ -83,6 +76,7 @@
             cursor: pointer;
             margin-top: 20px;
         }
+
         /* Media queries to show/hide sections */
         @media (max-width: 600px) {
             #web-view {
@@ -92,6 +86,7 @@
                 display: block;
             }
         }
+
         @media (min-width: 601px) {
             #mobile-view {
                 display: none;
@@ -101,143 +96,94 @@
             }
         }
 
+        /* Centering nav */
+    
 
-	</style>
+      
+    </style>
 </head>
-<body class="bg-black  ">
-
-
-  
-  
-  
-
-<div>
-  
-</div>
-
-
- <div class="container-fluid">
-
-  
-  
 
 
 
 
- <!-- Content starts -->
-
-
-
-
-
-
-
-<!-- The modal message if they havent find the Treasuree -->
- 
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-          <p id="modal-message"></p>
-          <button class="close-btn" onclick="closeModal()">Close</button>
-      </div>
-  </div>
-
-  <!-- ---------------------------------------------------------------- -->
- 
-
- 
-
-      
+<body class="bg-black">
     
-   
-
-
-
-  
-   
-
-  <section  class="MOB text-center">
-    
-      
-<!-- The profile Header -->
-<section style="margin-top: 0.1rem; margin-bottom: 1rem; "  class="text-left  ">
-  <div class="text-center">
-    <button style="background-color: #0f0f0f; border: 2px solid rgb(0, 0, 0); padding: 0.3rem; border-radius: 2rem; ">
-      <div style="font-size: 1.2rem;" class=" text-white  o8 ">
-        <img class="p-img" src="./images/00 (1).png" width="40"  >
-        Daminathan  👏
+    <div>
+        <!-- Content starts -->
+        <!-- The modal message if they haven't find the Treasure -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p id="modal-message"></p>
+                <button class="close-btn" onclick="closeModal()">Close</button>
+            </div>
         </div>
-    </button>
-  </div>
+        <section class="MOB text-center">
+            <!-- The profile Header -->
+            <section style="margin-top: 0.1rem; margin-bottom: 1rem;" class="text-left">
+                <div class="text-center">
+                    <button style="background-color: #0f0f0f; border: 2px solid rgb(0, 0, 0); padding: 0.3rem; border-radius: 2rem;">
+                        <div style="font-size: 1.2rem;" class="text-white o8">
+                            <img class="p-img" src="./images/00 (1).png" width="40">
+                            Daminathan 👏
+                        </div>
+                    </button>
+                </div>
+            </section>
+            <!-- The profile header -->
+            <!-- the earnings section -->
+            <section class="text-center">
+                <div>
+                    <b class="text-white">Asset Prize</b>
+                    <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
+                </div>
+                <div class="text-center text-white"></div>
+            </section>
+            <!-- The Game Itself ------------------------------------------------------- -->
+            <div class="text-center">
+                <!-- Mobile View Section -->
+                <div id="mobile-view">
+                    <div id="mobile-game-board"></div>
+                </div>
+            </div>
 
 
-</section>
-<!-- The profile header -->
-  
+        </section>
 
-
-<!-- the earnings section -->
- <section class="text-center">
-  <div>
-    <b class="text-white">Asset Prize</b>
-    <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
-  </div>
-
-  <div class="text-center text-white">
-       
-  
-   </div>
- </section>
-
-    
-<!-- The Game Itself ------------------------------------------------------- -->
-   <!-- Mobile View Section -->
-    
-   
-
-
-   
-    
-  </section>
-
-<!-- The Game itself --------------------------------------------------------------------- -->
-
- <div class="text-center">
-  <!-- Mobile View Section -->
- <div id="mobile-view">
-  <div id="mobile-game-board"></div>
-</div>
- </div>
-
- <!-- The Game Itself ------------------------------------------------------------- -->
- 
-  
-
-
- 
-
-
-<!-- /////////////// The Html Design for the Game -->
- 
-  
-    
-
-
- <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
-
-   
-  
-
-
-    
-   
+        
+            <!-- The Game Itself ------------------------------------------------------------- -->
+            <section  class="MOB container">
+              <nav>
+                  <div class="bottom-nav bottom-bar row text-center">
+                      <!-- Transaction Navigation -->
+                      <div class="button-container">
+                          <div class="button">
+                              <a style="text-decoration: none;" href="./home.html" class="buttonx">
+                                  <img src="./images/T (2).png" alt="Home">
+                              </a>
+                          </div>
+                          <div class="button">
+                              <a style="text-decoration: none;" href="farm.html" class="buttonx">
+                                  <img src="./images/status.png" alt="Farm">
+                              </a>
+                          </div>
+                          <div class="button">
+                              <a style="text-decoration: none;" href="./profile.html" class="buttonx">
+                                  <img src="./images/status (1).png" alt="Profile">
+                              </a>
+                          </div>
+                          <div class="button">
+                              <a style="text-decoration: none;" href="./Notification.html" class="buttonx">
+                                  <img src="./images/share.png" alt="Notification">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </section>
 
 
 
- </div>
-
- <!-- bottom Navigation Bar -->
-  
+          
 
 
 
@@ -252,122 +198,110 @@
 
 
 
-<!-- Web View Starst Here ---------------------------------------------------------- -->
-<section style="background-image: url('./images/jiop.png'); background-size: contain;" class="WEB">
-
- <div style="margin-left: 20rem; margin-right: 20rem; padding: 3rem;
-     border: 5px solid rgb(17, 17, 17); border-radius: 6rem; background-color: #000000;">
-  
-
-      
-<!-- The profile Header -->
-<section style="margin-top: 0.1rem; margin-bottom: 1rem; "  class="text-left  ">
-  <div class="text-center">
-    <button style="background-color: #7300ff; border: 2px solid rgb(99, 63, 141); padding: 0.3rem; border-radius: 2rem; ">
-      <div class=" text-white  o8 ">
-        <img class="p-img" src="./images/00 (1).png" width="40"  >
-        @kiel  👏
-        </div>
-    </button>
-  </div>
 
 
-</section>
-<!-- The profile header -->
-  
 
 
-<!-- the earnings section -->
- <section class="text-center">
-  <div>
-    <b class="text-white">Earnings - Paid</b>
-    <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
-  </div>
-
-  <div class="text-center text-white">
-       
-  
-   </div>
- </section>
 
 
-<div class="text-center">
-  
-    <!-- Web View Section -->
-    <div id="web-view">
-    
-      <div id="web-game-board"></div>
-  </div>
-</div>
- </div>
-</section>
-
-<br><br><br>
 
 
-<!-- Navigation menu -->
- 
 
-<section>
-  <nav style="position: fixed; " class="text-center">
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Web View Starts Here ---------------------------------------------------------- -->
+        <section  class="WEB">
+
+                <div class="row container">
+                  <div class="col">
+                      
+ <div>
+  <nav  class="text-center ">
         
      
-    <div class=" bottom-nav bottom-bar row  text-center ">
-      <div class="col col-lg-3 col-md-3 text-center">
-          <h2>
-            <a href="./home.html">
-              <button class="buttonx">
-         
-                <img class="tmage" src="./images/T (2).png" width="35">
-               
-           </button>
-            </a>
-          </h2>
-         
-      </div>
-
-      <div class="col col-lg-3 col-md-3 text-center">
-        <h2>
-          <a href="./farm.html">
-           <button class="buttonx ">
-      
-             <img class="tmage" src="./images/T (1).png" width="35">
-     </button>
-
-          </a>
-       </h2>
-         
-      </div>
-
-
-      <div class="col col-lg-3 col-md-3 text-center">
-        <a href="./profile.html"> <h2>
-         <button class="buttonx text-center">
-    
-             <img class="tmage" src="./images/T (3).png" width="35">
-     </button>
-     </h2></a>
+    <div class=" row  text-center ">
+      <!-- Transaction Navigation -->
+  <div>
+    <div class="Nweb" >
+      <a style="text-decoration: none;  " href="./home.html" >
+        <i ><img src="./images/T (2).png" width="30"></i>
         
-     </div>
-
-      <div class="col col-lg-3 col-md-3 text-center">
-          <a href="./Notification.html">
-            <h2>
-              <button class="buttonx text-center">
-         
-                  <img class="tmage" src="./images/T (4).png" width="35">
-          </button>
-          </h2>
-          </a>
+      </a>
+    </div>
+    <div class="Nweb">
+        <a style="text-decoration: none;" href="farm.html" >
           
-         
-      </div>
+          <i><img src="./images/status.png" width="30"></i>
+      
+        </a>
+    </div>
+    <div class="Nweb" >
+        <a style="text-decoration: none;" href="./profile.html" >
+          <i><img src="./images/status (1).png" width="30"></i>
+       
+        </a>
+    </div>
 
+    <div class="Nweb" >
+      <a style="text-decoration: none;" href="./Notification.html" >
+        <i><img src="./images/share.png" width="30"></i>
+     
+      </a>
+  </div>
+  </div>
+
+  <!-- -------------------- -->
      
      
   </div>
   </nav>
-  </section>
+  </div>
+
+                  </div>
+
+                  <!-- /////////////////////////////////////////////////////////////////////////// -->
+                <div class="col">
+                  <div style=" padding: 3rem; border: 5px solid rgb(17, 17, 17); border-radius: 6rem; background-color: #000000;">
+                    <!-- The profile Header -->
+                    <section style="margin-top: 0.1rem; margin-bottom: 1rem;" class="text-left">
+                        <div class="text-center">
+                            <button style="background-color: #7300ff; border: 2px solid rgb(99, 63, 141); padding: 0.3rem; border-radius: 2rem;">
+                                <div class="text-white o8">
+                                    <img class="p-img" src="./images/00 (1).png" width="40">
+                                    @kiel 👏
+                                </div>
+                            </button>
+                        </div>
+                    </section>
+                    <!-- The profile header -->
+                    <!-- the earnings section -->
+                    <section class="text-center">
+                        <div>
+                            <b class="text-white">Earnings - Paid</b>
+                            <div style="color: #ffffff; font-size: 3rem; font-weight: 300;"><b style="color: #00ff6a;">£</b>35,650 </div>
+                        </div>
+                        <div class="text-center text-white"></div>
+                    </section>
+                    <div class="text-center">
+                        <!-- Web View Section -->
+                        <div id="web-view">
+                            <div id="web-game-board"></div>
+                        </div>
+                    </div>
+                </div>
+                      
+                </div>
+
+                </div>
 
 
 
@@ -376,81 +310,14 @@
 
 
 
+         
 
 
-
-
- 
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
- 
-
-
-
-
-
-    
-  
-
- 
-
-
-
-
-
-
-
-
-
-
-   
-
-  
- 
-
- 
-
- 
-
-  
-
- 
-  
-
-    
-
-    
-   
-    
- 
-  
-   
-
-
-
+        </section>
+        <br><br>
+    </div>
     <script src="./js/game.js"></script>
-
     <script src="./js/gameweb.js"></script>
-
-<script src="./js/bootstrap.min.js"></script>  
-   <!-- <script src="./Js/bootstrap.min.js"></script>   -->
+    <script src="./js/bootstrap.min.js"></script>
 </body>
-
 </html>

@@ -22,21 +22,108 @@ html{
 }
 
 
-
-
-.buttonx{
+.button-container-r {
+    display: flex;
+    .button-container {
+    display: flex;
+    gap: 10px; /* Reduced gap between buttons */
+    display: flex;
+    justify-content: left;
+    align-items: center;
    
-    border-radius: 0.9rem;
-    padding: 0.5rem;
-    background-color: rgb(0, 0, 0) ;
-    border: 2px solid #2c2c2c ;
-     
-  
+   
+    margin: 0;
 }
 
-.buttonx img {
-     width: 30px !important;
 }
+.icon-text-container{
+  display: flex;
+  align-items: baseline;
+}
+
+.icon {
+   margin-right: 10px ;
+}
+
+
+@media (max-width: 1000px) {
+    .WEB{
+      display: none;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .MOB{
+      display: none;
+    }
+  }
+
+  .button {
+    color: white;
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .button {
+      font-size: 1rem;
+      padding: 15px 30px;
+    }
+  }
+
+  .p-img {
+    border-radius: 7rem;
+  }
+
+  .vmg {
+    border-radius: 2rem;
+  }
+
+  .form-check {
+    text-align: left;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    width: 100%;
+    bottom: 0;
+    padding: 0px 0;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .button {
+    flex: 1;
+    text-align: center;
+  }
+
+  .buttonx {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 1rem;
+    border: 1px solid rgb(44, 10, 59);
+  }
+
+  .buttonx img {
+    display: block;
+    margin: 0 auto;
+    width: 30px !important;
+  
+  }
+
+
+
+
+
 
 
 
@@ -91,3 +178,14 @@ html{
     background: none;
 }
 
+.Nweb{
+    margin: 3rem;
+}
+
+.Nweb i{
+    background-color: #000000;
+    padding: 1rem;
+    
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 1rem;
+}
