@@ -108,15 +108,15 @@ html{
     color: white;
     text-decoration: none;
     padding: 10px;
-    background-color: #ae00ff;
+    background-color: #000000;
     border-radius: 1rem;
-    border: 1px solid rgb(44, 10, 59);
+    border: 1.5px solid rgb(37, 37, 37);
   }
 
   .buttonx img {
     display: block;
     margin: 0 auto;
-    width: 30px !important;
+    width: 20px !important;
   
   }
 
