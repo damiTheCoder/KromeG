@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Marketplace</title>
+     
+    <link rel="stylesheet" href="./css/pages.Css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #000000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffffff;
+            margin: 10px 0;
+        }
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .item {
+            background-color: rgb(17, 17, 17);
+            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid rgb(77, 77, 77);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .item-info {
+            font-size: 12px;
+            color: #ffffff;
+        }
+        .coins, .amount {
+            font-weight: bold;
+            color: #8c00ff;
+        }
+        .seller-name {
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .contact a {
+            display: inline-block;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 11px;
+        }
+        #upload-form {
+            background-color: rgb(19, 19, 19);
+            border: 2px solid rgb(31, 31, 31);
+            padding: 1rem;
+            border-radius: 2rem;
+            margin-bottom: 10px;
+        }
+        input, button {
+            margin: 5px ;
+            padding: 10px;
+            border: 2px solid black;
+            color: #ffffff;
+            background-color: #141414;
+            border-radius: 1rem;
+            font-size: 0.9rem;
+        }
+        button {
+            background-color: #5900ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff00f2;
+        }
+
+        @media (min-width: 768px) {
+            .item-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 15px;
+            }
+            .item-info {
+                font-size: 14px;
+            }
+            .contact a {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .item-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            .item-info {
+                font-size: 16px;
+            }
+            .contact a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+       <!-- My Navigation menu ------------------------------------------------------ -->
+     <nav>
+       
+
+        <section>
+        
+          <div>
+             <div>
+                 
+        <!-- Button trigger modal -->
+        
+        <div style="position: fixed;right: 0; padding: 1rem;"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+           <img src="./images/menu (3).png" width="30">
+         </div>
+        
+         <br>
+         <!-- Modal -->
+         <div   class="modal fade  "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+           <div class="modal-dialog  " >
+               
+             <div style="background-color: #0a0a0a; border: 3px solid rgb(24, 24, 24); border-radius: 2rem;  " class="modal-content mf">
+        
+               <div class="modal-header " >
+        
+                 <p data-bs-dismiss="modal" aria-label="Close">
+                  <img src="./images/x.png"></p>
+               </div>
+               
+               
+               <div class="modal-body  ">
+                
+                 
+        
+        
+        
+               <br>
+                
+              
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item ">
+                  <a class="nav-link active text-black" aria-current="page" href="#"><p class="offp">
+                    <img style="background-color: #6200ff; border-radius: 1rem; " src="./images/lono.png" width="40">
+                    <b style="color: #ffffff;">Hosted Games</b></p></a>
+                </li>
+  
+                <li class="nav-item ">
+                  <a class="nav-link active text-black" aria-current="page" href="./marketplace.html"><p class="offp">
+                    <img style="background-color: #6200ff; border-radius: 1rem; " src="./images/HD Yellow Neon Call Of Duty Mobile COD M Game Logo PNG.jfif" width="40">
+                    <b style="color: #ffffff;">CallOfDuty market place</b></p></a>
+                </li>
+  
+                
+                <li class="nav-item ">
+                  <a class="nav-link active text-black" aria-current="page" href="./MarketCoin.html"><p class="offp">
+                    <img style=" border-radius: 1rem; " src="./images/dollar (1).png" width="40">
+                    <b style="color: #ffffff;">BUY & SELL Coin</b></p></a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"><p class="offp">
+                    <img style="border-radius: 1rem;" src="./images/dog (3).jpg" width="40" >
+                    <b style="color: #ffffff; ">Customer support
+                    </b></p></a>
+                </li>
+      
+                <p class="text-white"><b>Follow our socials</b></p>
+              
+                  
+                  <li>
+                   <p class="offp text-white">  <a style="text-decoration: none; color: white; " href="#">
+                    <img src="./images/twitter (2).png" width="40">
+                    Twitter
+                  </a></p>
+                  </li>
+      
+                  <li>
+                    <p class="offp text-white">  
+                       <a href="#"><img src="./images/tiktok (1).png" width="40"></a>
+                       Tiktok
+                    </p>
+                   </li>
+      
+                 
+              
+                
+              </ul>
+      
+             
+      
+              
+              
+             
+        
+             </div>
+               
+           </div>
+           </div>
+         </div>
+        
+             </div>
+        <!-- //////////////// second column -->
+           
+        
+          </div>
+         
+        
+        </section>
+       </nav>
+       <!-- my Navigation Menu Ends -->
+    
+
+
+
+
+    <div class="container">
+        <h1>Coin Marketplace</h1>
+        
+        <div id="upload-form">
+            <h2>List Coins for Sale</h2>
+            <input type="number" id="coins-input" placeholder="Number of Coins">
+            <input type="number" id="amount-input" placeholder="Amount for Sale">
+            <input type="text" id="name-input" placeholder="Your Name">
+            <input type="text" id="whatsapp-input" placeholder="WhatsApp Link">
+            <input type="text" id="telegram-input" placeholder="Telegram Link">
+            <button onclick="addItem()">List for Sale</button>
+        </div>
+
+        <div class="item-grid" id="item-grid">
+            <!-- Items will be added here dynamically -->
+        </div>
+    </div>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            const coins = document.getElementById('coins-input').value;
+            const amount = document.getElementById('amount-input').value;
+            const name = document.getElementById('name-input').value;
+            const whatsappLink = document.getElementById('whatsapp-input').value;
+            const telegramLink = document.getElementById('telegram-input').value;
+
+            if (!coins || !amount || !name) {
+                alert('Please provide the number of coins, amount, and your name.');
+                return;
+            }
+
+            const newItem = {
+                coins: coins,
+                amount: amount,
+                name: name,
+                whatsappLink: whatsappLink,
+                telegramLink: telegramLink
+            };
+            items.push(newItem);
+            renderItems();
+
+            // Clear form inputs
+            document.getElementById('coins-input').value = '';
+            document.getElementById('amount-input').value = '';
+            document.getElementById('name-input').value = '';
+            document.getElementById('whatsapp-input').value = '';
+            document.getElementById('telegram-input').value = '';
+        }
+
+        function renderItems() {
+            const itemGrid = document.getElementById('item-grid');
+            itemGrid.innerHTML = '';
+
+            items.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'item';
+                itemElement.innerHTML = `
+                    <div class="item-info">
+                        <p><span class="coins">${item.coins} Coins</span> for <span class="amount">$${item.amount}</span></p>
+                        <p>Seller: <span class="seller-name">${item.name}</span></p>
+                        <p class="contact">
+                            ${item.whatsappLink ? `<a href="${item.whatsappLink}" target="_blank">WhatsApp</a>` : ''}
+                            ${item.telegramLink ? `<a href="${item.telegramLink}" target="_blank">Telegram</a>` : ''}
+                        </p>
+                    </div>
+                `;
+                itemGrid.appendChild(itemElement);
+            });
+        }
+    </script>
+
+<br><br><br>
+<!-- The Button Navigation -->
+<nav>
+    <div class="bottom-nav bottom-bar row text-center">
+        <!-- Transaction Navigation -->
+        <div class="button-container">
+            <div class="button">
+                <a style="text-decoration: none;" href="./home.html" class="buttonx">
+                    <img src="./images/T (2).png" alt="Home">
+                </a>
+            </div>
+            <div class="button">
+                <a style="text-decoration: none;" href="farm.html" class="buttonx">
+                    <img src="./images/status.png" alt="Farm">
+                </a>
+            </div>
+            <div class="button">
+                <a style="text-decoration: none;" href="./profile.html" class="buttonx">
+                    <img src="./images/status (1).png" alt="Profile">
+                </a>
+            </div>
+           
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<script src="./js/click-scroll.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script> 
+<script src="./js/bootstrap.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace UI with Categories</title>
+
+     
+    <link rel="stylesheet" href="./css/pages.Css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #000000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto; 
+            background-color: black;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffffff;
+            margin: 10px 0;
+        }
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+        .item {
+            background-color: rgb(8, 8, 8);
+            border: 2px solid rgb(34, 34, 34);
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .item img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .item-info {
+            margin-top: 5px;
+            font-size: 0.8em;
+        }
+        .price {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .category {
+            color: #ffffff;
+            font-style: italic;
+        }
+        .contact a {
+            display: inline-block;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #2196F3;
+        }
+        #upload-form {
+            background-color: rgb(19, 19, 19);
+            border: 2px solid rgb(31, 31, 31);
+            padding: 1rem;
+            border-radius: 2rem;
+            margin-bottom: 10px;
+        }
+        input, select, button {
+            margin: 5px ;
+            padding: 10px;
+            border: 2px solid black;
+            color: #ffffff;
+            background-color: #141414;
+            border-radius: 1rem;
+            font-size: 0.9rem;
+        }
+        button {
+            background-color: #7700ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d400ff;
+        }
+        #category-filter {
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 5px;
+        }
+        #category-filter button {
+            padding: 5px;
+            background-color: #8400ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 0.8em;
+        }
+        #category-filter button:hover {
+            background-color: #1d1d1d;
+        }
+        #category-filter button.active {
+            background-color: #ea00ff;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .item-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
+            }
+            .item img {
+                height: 150px;
+            }
+            .item-info {
+                font-size: 1em;
+            }
+            #upload-form {
+                padding: 20px;
+            }
+            input, select, button {
+                padding: 8px;
+                font-size: 1em;
+            }
+            #category-filter {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 10px;
+            }
+            #category-filter button {
+                padding: 10px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ <!-- My Navigation menu ------------------------------------------------------ -->
+ <nav>
+       
+
+    <section>
+    
+      <div>
+         <div>
+             
+    <!-- Button trigger modal -->
+    
+    <div style="position: fixed;right: 0; padding: 1rem;"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+       <img src="./images/menu (3).png" width="30">
+     </div>
+    
+     <br>
+     <!-- Modal -->
+     <div   class="modal fade  "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+       <div class="modal-dialog  " >
+           
+         <div style="background-color: #0a0a0a; border: 3px solid rgb(24, 24, 24); border-radius: 2rem;  " class="modal-content mf">
+    
+           <div class="modal-header " >
+    
+             <p data-bs-dismiss="modal" aria-label="Close">
+              <img src="./images/x.png"></p>
+           </div>
+           
+           
+           <div class="modal-body  ">
+            
+             
+    
+    
+    
+           <br>
+            
+          
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item ">
+              <a class="nav-link active text-black" aria-current="page" href="#"><p class="offp">
+                <img style="background-color: #6200ff; border-radius: 1rem; " src="./images/lono.png" width="40">
+                <b style="color: #ffffff;">Hosted Games</b></p></a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link active text-black" aria-current="page" href="#"><p class="offp">
+                <img style="background-color: #6200ff; border-radius: 1rem; " src="./images/HD Yellow Neon Call Of Duty Mobile COD M Game Logo PNG.jfif" width="40">
+                <b style="color: #ffffff;">CallOfDuty market place</b></p></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#"><p class="offp">
+                <img style="border-radius: 1rem;" src="./images/dog (3).jpg" width="40" >
+                <b style="color: #ffffff; ">Customer support
+                </b></p></a>
+            </li>
+  
+            <p class="text-white"><b>Follow our socials</b></p>
+          
+              
+              <li>
+               <p class="offp text-white">  <a style="text-decoration: none; color: white; " href="#">
+                <img src="./images/twitter (2).png" width="40">
+                Twitter
+              </a></p>
+              </li>
+  
+              <li>
+                <p class="offp text-white">  
+                   <a href="#"><img src="./images/tiktok (1).png" width="40"></a>
+                   Tiktok
+                </p>
+               </li>
+  
+             
+          
+            
+          </ul>
+  
+         
+  
+          
+          
+         
+    
+         </div>
+           
+       </div>
+       </div>
+     </div>
+    
+         </div>
+    <!-- //////////////// second column -->
+       
+    
+      </div>
+     
+    
+    </section>
+   </nav>
+   <!-- my Navigation Menu Ends -->
+
+
+
+
+
+
+    <div class="container">
+        <h1 class="text-white">Marketplace</h1>
+        
+        <div id="upload-form">
+            <h2 class="text-white">Upload Item</h2>
+            <input type="file" id="image-upload" accept="image/*">
+            <input type="text" id="price-input" placeholder="Price">
+            <input type="text" id="telegram-input" placeholder="Telegram link">
+            <input type="text" id="whatsapp-input" placeholder="WhatsApp link">
+            <select id="category-select">
+                <option value="">Select a category</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+                <option value="home">Home & Garden</option>
+                <option value="other">Other</option>
+            </select>
+            <button onclick="addItem()">Upload</button>
+        </div>
+
+        <div id="category-filter">
+            <button onclick="filterItems('all')" class="active">All</button>
+            <button onclick="filterItems('electronics')">Electronics</button>
+            <button onclick="filterItems('clothing')">Clothing</button>
+            <button onclick="filterItems('books')">Books</button>
+            <button onclick="filterItems('home')">Home & Garden</button>
+            <button onclick="filterItems('other')">Other</button>
+        </div>
+
+        <div class="item-grid" id="item-grid">
+            <!-- Items will be added here dynamically -->
+        </div>
+    </div>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            console.log("addItem function called");
+
+            const imageUpload = document.getElementById('image-upload');
+            const price = document.getElementById('price-input').value;
+            const telegramLink = document.getElementById('telegram-input').value;
+            const whatsappLink = document.getElementById('whatsapp-input').value;
+            const category = document.getElementById('category-select').value;
+
+            console.log("Form values:", { price, telegramLink, whatsappLink, category });
+
+            if (!imageUpload.files[0] || !price || !category) {
+                alert('Please provide an image, price, and category.');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                console.log("Image loaded");
+
+                const newItem = {
+                    image: e.target.result,
+                    price: price,
+                    telegramLink: telegramLink,
+                    whatsappLink: whatsappLink,
+                    category: category
+                };
+                items.push(newItem);
+                console.log("New item added:", newItem);
+
+                renderItems();
+
+                // Clear form inputs
+                imageUpload.value = '';
+                document.getElementById('price-input').value = '';
+                document.getElementById('telegram-input').value = '';
+                document.getElementById('whatsapp-input').value = '';
+                document.getElementById('category-select').value = '';
+
+                console.log("Form cleared");
+            };
+            reader.readAsDataURL(imageUpload.files[0]);
+        }
+
+        function renderItems(filter = 'all') {
+            console.log("renderItems called with filter:", filter);
+
+            const itemGrid = document.getElementById('item-grid');
+            itemGrid.innerHTML = '';
+
+            items.forEach(item => {
+                if (filter === 'all' || item.category === filter) {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'item';
+                    itemElement.innerHTML = `
+                        <img src="${item.image}" alt="Item Image">
+                        <div class="item-info">
+                            <p class="price">${item.price}</p>
+                            <p class="category">${item.category}</p>
+                            <p class="contact">
+                                ${item.telegramLink ? `<a href="${item.telegramLink}" target="_blank">Telegram</a>` : ''}
+                                ${item.whatsappLink ? `<a href="${item.whatsappLink}" target="_blank">WhatsApp</a>` : ''}
+                            </p>
+                        </div>
+                    `;
+                    itemGrid.appendChild(itemElement);
+                }
+            });
+
+            console.log("Items rendered:", items.length);
+        }
+
+        function filterItems(category) {
+            console.log("filterItems called with category:", category);
+
+            renderItems(category);
+            
+            // Update active button
+            const buttons = document.querySelectorAll('#category-filter button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.textContent.toLowerCase() === category || 
+                    (category === 'all' && button.textContent === 'All')) {
+                    button.classList.add('active');
+                }
+            });
+        }
+    </script>
+
+<br><br><br><br>
+
+<!-- Navigation menu -->
+ 
+
+<section>
+    <nav style="position: fixed; " class="text-center ">
+          
+       
+      <div class=" bottom-nav bottom-bar row  text-center ">
+        <!-- Transaction Navigation -->
+    <div class="button-container">
+      <div class="button">
+        <a style="text-decoration: none;" href="./home.html" class="buttonx">
+          <i><img src="./images/T (2).png" width="30"></i>
+          
+        </a>
+      </div>
+      <div class="button">
+          <a style="text-decoration: none;" href="farm.html" class="buttonx">
+            
+            <i><img src="./images/status.png" width="30"></i>
+        
+          </a>
+      </div>
+      <div class="button">
+          <a style="text-decoration: none;" href="./profile.html" class="buttonx">
+            <i><img src="./images/status (1).png" width="30"></i>
+         
+          </a>
+      </div>
+  
+    
+    </div>
+  
+    <!-- -------------------- -->
+       
+       
+    </div>
+    </nav>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    
+<script src="./js/click-scroll.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script> 
+<script src="./js/bootstrap.min.js"></script>  
+</body>
+</html>
