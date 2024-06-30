@@ -27,23 +27,23 @@
         }
         .item-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 10px;
         }
         .item {
             background-color: rgb(17, 17, 17);
-            border-radius: 8px;
+            border-radius: 1rem;
             padding: 10px;
-            border: 1px solid rgb(77, 77, 77);
+            border: 1px solid rgb(39, 39, 39);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .item-info {
-            font-size: 12px;
+            font-size: 1rem;
             color: #ffffff;
         }
         .coins, .amount {
             font-weight: bold;
-            color: #8c00ff;
+            color: #00ff62;
         }
         .seller-name {
             font-weight: bold;
@@ -79,26 +79,32 @@
             cursor: pointer;
         }
         button:hover {
-            background-color: #ff00f2;
+            background-color: #8c00ff;
         }
 
-        @media (min-width: 768px) {
-            .item-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 15px;
-            }
-            .item-info {
-                font-size: 14px;
-            }
-            .contact a {
-                font-size: 13px;
-            }
-        }
+     
 
         @media (min-width: 1024px) {
             .item-grid {
-                grid-template-columns: repeat(5, 1fr);
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
             }
+          
+            .item-info {
+                font-size: 16px;
+            }
+            .contact a {
+                font-size: 14px;
+            }
+        }
+
+        
+        @media (min-width: 1024px) {
+            .item-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+                gap: 20px;
+            }
+          
             .item-info {
                 font-size: 16px;
             }
@@ -109,7 +115,7 @@
     </style>
 </head>
 <body>
-       <!-- My Navigation menu ------------------------------------------------------ -->
+     <!-- My Navigation menu ------------------------------------------------------ -->
      <nav>
        
 
@@ -129,7 +135,7 @@
          <div   class="modal fade  "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
            <div class="modal-dialog  " >
                
-             <div style="background-color: #0a0a0a; border: 3px solid rgb(24, 24, 24); border-radius: 2rem;  " class="modal-content mf">
+             <div style="background-color: #000000; border: 1px solid rgb(41, 41, 41); border-radius: 2rem;  " class="modal-content mf">
         
                <div class="modal-header " >
         
@@ -157,7 +163,7 @@
                 <li class="nav-item ">
                   <a class="nav-link active text-black" aria-current="page" href="./marketplace.html"><p class="offp">
                     <img style="background-color: #6200ff; border-radius: 1rem; " src="./images/HD Yellow Neon Call Of Duty Mobile COD M Game Logo PNG.jfif" width="40">
-                    <b style="color: #ffffff;">CallOfDuty market place</b></p></a>
+                    <b style="color: #ffffff;">Call Of Duty market place</b></p></a>
                 </li>
   
                 
@@ -218,7 +224,6 @@
         </section>
        </nav>
        <!-- my Navigation Menu Ends -->
-    
 
 
 
@@ -236,6 +241,8 @@
             <button onclick="addItem()">List for Sale</button>
         </div>
 
+        <button style="background-color: #111111; border: 2px solid blueviolet; border-radius: 1rem;">Trade Coins</button>
+        <br>
         <div class="item-grid" id="item-grid">
             <!-- Items will be added here dynamically -->
         </div>
